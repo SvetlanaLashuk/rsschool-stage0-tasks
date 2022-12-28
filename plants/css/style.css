@@ -66,6 +66,10 @@ body {
 *, *::before, *::after {
      box-sizing: inherit;
 } */ 
+.img {
+    max-width: 100%;
+    height: auto;
+}
 .wrapper {
     max-width: 1222px;
     margin: 0 auto;
@@ -77,7 +81,7 @@ body {
     background-color: #EDF2EC;
     /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);*/
     width: 100%;
-    padding: 42px 110px;
+    /* padding: 42px 110px; */
     /*height: 134px;*/
 }
 .header__wrapper {
@@ -85,6 +89,8 @@ body {
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
+    padding-top: 42px;
+    padding-bottom: 42px;
 }
 /*.header__logo {
     padding-left: 111px;
@@ -116,16 +122,38 @@ body {
 /* header styles end */
 
 /* welcome styles start */
+/* .welcome__wrapper {
+    max-width: 1222px;
+    margin: 0 auto;
+} */
 .welcome {
     /*height: 100vh;*/
     background-color: #EDF2EC;
-    padding-top: 98px;
+    padding: 62px 109px;
 }
-.welcome__container {
+.welcome__wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-top: 62px;
+    padding-bottom: 62px; */
+}
+.leafs {
+    width: 50%;
+    max-width: 449px;
+    /* height: 407px; */
+    /* margin-right: 224px; */
+}
+
+.welcome__text {
+    width: 50%;
     max-width: 549px;
+    margin-left: 224px;
+    padding-bottom: 32px;
 }
 .welcome__title {
-    
     font-family: 'Inter';
     font-weight: 700;
     font-size: 45px;
@@ -143,5 +171,23 @@ body {
     line-height: 35px;
     color: #636060;
     margin-bottom: 48px;
+}
+.welcome__section-more {
+    padding: 14px 27px;
+    text-transform: uppercase;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    /* line-height: 20px; */
+    color: #000000;
+    border: 2px solid #E06733;
+    border-radius: 10px;
+}
+.welcome__section-more:hover,
+.welcome__section-more:focus,
+.welcome__section-more:active {
+    background-color: #E06733;
+    color: #FFFFFF;
 }
 /* welcome styles end */

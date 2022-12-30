@@ -413,5 +413,60 @@ body {
     padding: 0 32px 36px 31px;
 }
 
-
 /* service styles end */
+
+/* prices styles start */
+.prices {
+    background-color: var(--background-color2);
+    width: 100%
+}
+.prices__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    /* padding-bottom: 129px; */
+}
+.prices__header {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: var(--black);
+    padding-right: 197px;
+    margin-bottom: 60px;
+}
+.prices__level {
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+}
+.prices__items {
+    padding: 34px 41px;
+}
+.price__item-basics,
+.price__item-standard {
+    margin-bottom: 32px;
+}
+/* .price__item-pro-care {
+    background: #EDF2EC;
+    border-radius: 20px;
+} */
+
+select:nth-child(1) {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    /* line-height: 20px; */
+    background: #EDF2EC;
+    border-radius: 20px;
+    max-width: 250px;
+}
+.price-select {
+    padding: 16px 110px 16px 40px;
+}
+/* prices styles end */

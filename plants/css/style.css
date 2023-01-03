@@ -419,10 +419,10 @@ body {
 .prices__wrap {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
-    /* padding-top: 40px; */
-    /* padding-bottom: 129px; */
+    row-gap: 438px;
+    background: url(../assets/img/leafs-prices.png) right bottom no-repeat;
 }
 .prices__header {
     margin: 0;
@@ -464,6 +464,47 @@ select:nth-child(1) {
 }
 .price-select {
     padding: 16px 110px 16px 40px;
+}
+/* .prices__text {
+   float: right;
+} */
+.prices__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: right;
+    color: var(--black);
+    margin: 0;
+    padding: 0;
+    max-width: 452px;
+    margin-bottom: 38px;
+}
+.selection {
+    color: var(--green);
+}
+.prices__button {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    /* line-height: 26px; */
+    /* min-width: 161px; */
+    float: right;
+    background-color: var(--background-color2);
+    color: var(--orange);
+    border: 1px solid var(--orange); 
+    border-radius: 5px;
+    padding: 12px 33.96px 12px 30.04px;
+    margin-bottom: 39px;
+}
+.prices__button:hover,
+.prices__button:focus,
+.prices__button:active {
+    background-color: var(--orange);
+    color: var(--white);
+    cursor: pointer;
 }
 /* prices styles end */
 

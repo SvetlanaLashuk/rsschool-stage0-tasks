@@ -14,14 +14,13 @@
                 <div class="header__wrapper">
                     <div class="header__logo">
                         <a href="/" class="header__logo-link">
-                            <img src="./assets/svg/plants-logo.svg" alt="Plants logo" class="header__logo-picture">Plants
-                        <!--span class="header__text">Plants</span-->
+                            <img src="./assets/svg/plants-logo.svg" alt="Plants logo" class="header__logo-picture">
+                            Plants
                         </a>
                     </div>
-                    
                     <nav class="header__nav">
                         <ul class="header__list">
-                            <li class="header__item"><a href="#home" class="header__link">Home</a></li>
+                            <li class="header__item"><a href="#home" class="header__link active">Home</a></li>
                             <li class="header__item"><a href="#about" class="header__link">About us</a></li>
                             <li class="header__item"><a href="#service" class="header__link">Service</a></li>
                             <li class="header__item"><a href="#prices" class="header__link">Price</a></li>
@@ -33,7 +32,7 @@
         </header>
 
         <main class="main">
-            <section class="welcome" id="#welcome">
+            <section class="welcome" id="welcome">
                 <div class="wrapper">
                     <div class="welcome__wrap">
                         <div class="leafs">
@@ -51,7 +50,7 @@
                     </div>
                 </div>
             </section>
-            <section class="about" id="#about">
+            <section class="about" id="about">
                 <div class="wrapper">
                     <div class="about__wrap">
                         <div class="about__text">
@@ -68,7 +67,7 @@
                     </div>
                 </div>
             </section>  
-            <section class="service" id="#service">
+            <section class="service" id="service">
                 <div class="wrapper">
                     <div class="service__header">
                         <h2 class="service__title">
@@ -168,7 +167,7 @@
                     </div>
                 </div>
             </section>
-            <section class="prices" id="#prices">
+            <section class="prices" id="prices">
                 <div class="wrapper">
                     <div class="prices__wrap">
                         <div class="price">
@@ -177,7 +176,7 @@
                             </h2>
                             <div class="prices__level">
                                 <div class="prices__items">
-                                    <div class="prices__item">
+                                    <!-- <div class="prices__item"> -->
                                         <!-- <form> -->
                                             <div class="price__item-basics">
                                                 <select class="price-select">
@@ -195,17 +194,68 @@
                                                 </select>
                                             </div>
                                         <!-- </form> -->
-                                    </div>
+                                    <!-- </div> -->
                                 </div>
                             </div>
                         </div>  
                     </div>
                 </div>
             </section>
-            <section class="contacts" id="#contacts"></section>
+            <section class="contacts" id="contacts">
+                <div class="wrapper">
+                    <div class="contacts__wrap">
+                        <img src="./assets/img/contact_woman.png" alt="Contact picture" class="contacts-pic">
+                        <h2 class="contacts__header">
+                            Contact us
+                        </h2>
+                        <!-- <div class="prices__items"> -->
+                            <div class="city-dropdown">
+                                <!-- <form> -->
+                                    <div class="city__item">
+                                        <select class="city-select">
+                                            <option class="city">City</option>
+                                        </select>
+                                    </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer class="footer">
+            <div class="wrapper">
+                <div class="footer__wrapper">
+                    <div class="footer__data">
+                        <p class="footer__text">©</p>
+                        <p class="footer__text">2022</p>
+                        <a href="https://github.com/SvetlanaLashuk" class="footer__text github-link">github</a>
+                    </div>
+                    <a href="https://rs.school/js-stage0/" class="footer__text link">Rolling Scopes School</a>
+                    <ul class="social-list">
+                        <li class="social-list-item">
+                            <a href="https://www.instagram.com/aspirituss/" class="social-list-link">
+                                <img src="./assets/svg/inst.svg" alt="Inst" class="inst">
+                            </a>
+                        </li>
+                        <li class="social-list-item">
+                            <a href="/" class="social-list-link">
+                                <img src="./assets/svg/fb.svg" alt="Fb" class="fb">
+                            </a>
+                        </li>
+                        <li class="social-list-item">
+                            <a href="/" class="social-list-link">
+                                <img src="./assets/svg/tw.svg" alt="Tw" class="tw">
+                            </a>
+                        </li>
+                        <li class="social-list-item">
+                            <a href="/" class="social-list-link">
+                                <img src="./assets/svg/pinterest.svg" alt="Pint" class="pint">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </footer>
     </body>
 </html>

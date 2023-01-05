@@ -202,16 +202,12 @@ img {
     margin-bottom: 46px;
 }
 .welcome__section-more {
-    padding: 14px 27px;
+    padding: 10px 27px;
     text-transform: uppercase;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    min-width: 158px;
-    height: 44px;
-    /* text-align: center; */
-     /* line-height: 20px; */
     background-color: var(--background-color1);
     color: var(--black);
     border: 2px solid var(--orange); 
@@ -234,14 +230,11 @@ img {
     padding: 93px 0;
 }
 .about__wrap {
-    display: flex;
-    flex-wrap: nowrap; 
-    /* align-items: center; */
+    display: flex; 
     justify-content: space-between;
     row-gap: 153px;
 }
 .about__text {
-    /* width: 50%; */
     max-width: 605px;
     margin-right: 153px;
 }
@@ -292,10 +285,8 @@ img {
     flex-wrap: wrap;
     align-items: center;
     column-gap: 142px;
-    /* padding-top: 40px; */
     margin-right: 215px;
-    /* max-width: 1007px; */
-    margin-bottom: 90px;
+    margin-bottom: 80px;
 }
 .service__title {
     margin: 0;
@@ -306,15 +297,13 @@ img {
     font-size: 40px;
     line-height: 52px;
     max-width: 306px;
-    height: 94px;
+    /* height: 94px; */
     color: var(--green);
     
 }
 .service__btn-group {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 29px;
-    padding-bottom: 13px; /*15px */
 }
 .service__button {
     padding: 12px 40px;
@@ -323,7 +312,7 @@ img {
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
-    min-width: 161px;
+    width: 161px;
     background-color: var(--background-color1);
     color: var(--orange);
     border: 1px solid var(--orange); 
@@ -346,7 +335,7 @@ img {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    row-gap: 55px;
+    row-gap: 56px;
     column-gap: 116px;
     /* padding-left: 9px; */
     /* padding-bottom: 121px; */
@@ -354,15 +343,19 @@ img {
 .service__item {
     padding: 0;
     margin: 0;    
-    min-height: 100;
-    /* margin-right: 113px; */
+    width: 330px;
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+}
+.service__item:hover {
+    border: 1px solid var(--green);
+    cursor: pointer;
 }
 .service__item:last-child {
     margin-right: 0;
 }
-.service__item-pic {
-   padding: 0;
-   margin: 0;
+ .service__item-pic img{
+   border-radius: 20px 20px 0 0;
 }
 .service_item-thumb {
     display: block;
@@ -370,47 +363,25 @@ img {
     padding: 0;
 }
 .service__item-text {
-    margin: 0;
-    padding: 0;
-    outline: 1px solid #E3E1D5;
-    /* outline-offset: 1px; */
-    border-radius: 0px 0px 20px 20px;
-    /* margin-top: -2px; */
-    /* margin-left: 1px;
-    margin-right: 1px; */
+    padding: 8px 30px 35px;
+    text-align: center;
 }
 .service__item-header {
     margin: 0;
-    padding-top: 10px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 20px;
     color: var(--orange);
     margin-bottom: 10px;
-    text-align: center;
 }
-/* .garden {
-    padding: 10px 105px 0 105px;
-}
-.planting {
-    padding: 10px 120px 0 120px;
-}
-.lawn {
-    padding: 10px 113px 0 113px;
-} */
 .service__item-desc {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 20px;
     color: #717171;
-    text-align: center;
-    padding: 0 32px 36px 31px;
 }
-
 /* service styles end */
 
 /* prices styles start */

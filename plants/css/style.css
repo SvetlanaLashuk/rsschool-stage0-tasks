@@ -58,7 +58,7 @@
 html {
     scroll-behavior: smooth;
 }
-body {
+body, p, div {
     margin: 0;
     padding: 0;
 }
@@ -69,14 +69,14 @@ body {
 *, *::before, *::after {
      box-sizing: inherit;
 } */ 
-.img {
+img {
     max-width: 100%;
-    height: auto;
+    /* height: auto; */
 }
 .wrapper {
-    max-width: 1222px;
+    max-width: 1252px;
     margin: 0 auto;
-    /* padding: 0 9px; */
+    padding: 0 15px;
 }
 
 /* header styles start */
@@ -92,9 +92,9 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-/*.header__logo {
-    padding-left: 111px;
-}*/
+.header__logo {
+    display: flex;
+}
 .header__list {
     display: flex;
     flex-wrap: wrap;
@@ -165,11 +165,12 @@ body {
     flex-wrap: wrap;
     /* align-items: center; */
     justify-content: space-between;
+    column-gap: 225px;
 }
 .leafs-pic { 
     width: 448px;
     height: 407px;
-    margin-right: 224px;
+    /* margin-right: 224px; */
 }
 
 .welcome__text {
@@ -185,7 +186,7 @@ body {
     color: #717171;
     margin: 0;
     padding: 0;
-    margin-bottom: 42px;
+    margin-bottom: 44px;
 }
 .welcome__title-selection {
     color: var(--green);
@@ -198,7 +199,7 @@ body {
     line-height: 35px;
     color: var(--text-color);
     margin: 0;
-    margin-bottom: 48px;
+    margin-bottom: 46px;
 }
 .welcome__section-more {
     padding: 14px 27px;
@@ -208,6 +209,8 @@ body {
     font-weight: 400;
     font-size: 16px;
     min-width: 158px;
+    height: 44px;
+    /* text-align: center; */
      /* line-height: 20px; */
     background-color: var(--background-color1);
     color: var(--black);
@@ -378,18 +381,17 @@ body {
 }
 .service__item-header {
     margin: 0;
-    padding: 0;
+    padding-top: 10px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
     color: var(--orange);
-    /* padding: 10px 0; */
-    /* text-align: center; */
     margin-bottom: 10px;
+    text-align: center;
 }
-.garden {
+/* .garden {
     padding: 10px 105px 0 105px;
 }
 .planting {
@@ -397,17 +399,15 @@ body {
 }
 .lawn {
     padding: 10px 113px 0 113px;
-}
+} */
 .service__item-desc {
-    margin: 0;
-    padding: 0;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     color: #717171;
-    /* text-align: center; */
+    text-align: center;
     padding: 0 32px 36px 31px;
 }
 
@@ -418,13 +418,13 @@ body {
     background-color: var(--background-color2);
     width: 100%;
     padding: 40px 0 115px 0;
+    height: 560px;
 }
 .prices__wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 438px;
-    background: url(../assets/img/leafs-prices.png) calc(100% + 10px) /*right*/ bottom no-repeat;
 }
 .prices__header {
     margin: 0;
@@ -450,29 +450,54 @@ body {
 .price__item {
     display: flex;
     justify-content: flex-end;
-    /* padding: .5em; */
     margin: 0;
     padding: 0;
     margin-bottom: 32px;
 }
-/* .price__item > select {
+.price-type {
     flex: 1;
-} */
-.price__item:last-child {
-    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 65px;
+    background: var(--background-color1);
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 16px 40px;
+    text-align: left;
+    cursor: pointer;
+    height: 50px;
 }
-.price-select/*:nth-child(1) option*/ {
-    flex: 1;
+.button-text {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    /* line-height: 20px; */
-    background: var(--background-color1);
-    border-radius: 20px;
-    border: none;
-    /* max-width: 250px; */
-    padding: 16px 110px 16px 40px;
+    line-height: 20px;
+}
+ .price__item:last-child {
+    margin-bottom: 0;
+}
+.price-type:hover {
+    background: #D6E7D2;
+}
+.left-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 39px;
+}
+.prices__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: baseline;
+    row-gap: 38px;
+}
+.price__text:last-child {
+    margin-bottom: 0;
 }
 .prices__title {
     font-family: 'Inter';
@@ -485,7 +510,7 @@ body {
     margin: 0;
     padding: 0;
     max-width: 452px;
-    margin-bottom: 38px;
+    /* margin-bottom: 38px; */
 }
 .selection {
     color: var(--green);
@@ -495,15 +520,11 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    /* line-height: 26px; */
-    /* min-width: 161px; */
-    float: right;
     background-color: var(--background-color2);
     color: var(--orange);
     border: 1px solid var(--orange); 
     border-radius: 5px;
     padding: 12px 33.96px 12px 30.04px;
-    margin-bottom: 39px;
 }
 .prices__button:hover,
 .prices__button:focus,
@@ -513,17 +534,20 @@ body {
     cursor: pointer;
     transition: 1s;
 }
+.prices-leafs {
+    padding-left: 0px;
+}
 /* prices styles end */
 
 /* contacts styles start */
 .contacts {
     background-color: var(--background-color1);
-    /* background: url(contact_woman.png); */
 }
 .contacts__wrap {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
+    flex-direction: row;
+    justify-content: space-between;
 }
 /* .contacts__text {
     margin-right: 37px;
@@ -546,30 +570,55 @@ body {
     margin-right: 113px;
 }
 .city-dropdown {
+    height: 50px;
+    width: 450px;
+    /* position: relative;    */
     padding-top: 148px;
-    /* display: flex;
-    justify-content: flex-end; */
-    /* max-width: 450px; */
 }
-/* .city-item {
-    display: flex;
-    justify-content: flex-end;
-} */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
 .city-select {
-    /* flex: 1; */
-    max-width: 450px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     letter-spacing: 0.05em;
-    /* line-height: 40px; */
+    line-height: 40px; 
     padding: 5px 226px 5px 20px;
     color: #717171;
+    min-width: 450px;
     background: #D6E7D2;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0px;
     border: none;
+    cursor: pointer;
+}
+.city-option{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    line-height: 40px; 
+    padding: 5px 226px 5px 20px;
+    color: #717171;
+    outline: none;
+    list-style: none;
+}
+.city-select:active {
+    background: #C1E698;
+    border: 1px solid #D6E7D2;
+    border-radius: 0px;
+    box-shadow: none;
+    transition: .6s;  
+}
+.contacts__accordion {
+    position: relative;
+    bottom: 33px;
+    left: 400px;
 }
 /* contacts styles end */
 

@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Plants</title>
         <link rel="stylesheet" href="./css/style.css">
-        <link rel="icon" href="./assets/svg/favicon.ico">
+        <link rel="icon" href="./assets/svg/favicon.svg">
     </head>
     <body>
         <header class="header">
@@ -177,28 +177,34 @@
                             <div class="prices__level">
                                 <div class="prices__items">
                                     <div class="price__item">
-                                        <select class="price-select">
-                                            <option>Basics</option>
-                                        </select>
+                                        <button class="price-type">
+                                            <span class="button-text">Basic</span>
+                                            <img src="./assets/img/accordion_btn_prices.png" alt="Acrd" class="prices_accordion" width="16" height="16">
+                                        </button>
                                     </div>
-                                    <div class="price__item">     
-                                        <select class="price-select">
-                                            <option>Standard</option>
-                                        </select>
+                                    <div class="price__item">
+                                        <button class="price-type">
+                                            <span class="button-text">Standard</span>
+                                            <img src="./assets/img/accordion_btn_prices.png" alt="Acrd" class="prices_accordion" width="16" height="16">
+                                        </button>
                                     </div>
-                                    <div class="price__item">     
-                                        <select class="price-select">
-                                            <option>Pro care</option>
-                                        </select>
+                                    <div class="price__item">
+                                        <button class="price-type">
+                                            <span class="button-text">Pro care</span>
+                                            <img src="./assets/img/accordion_btn_prices.png" alt="Acrd" class="prices_accordion" width="16" height="16">
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="prices__text">
-                            <p class="prices__title">
-                                Our best <span class="selection">gardeners</span> are ready to help you
-                            </p>
-                            <button class="prices__button">Contact us</button>
+                        <div class="left-block">
+                            <div class="prices__text">
+                                <p class="prices__title">
+                                    Our best <span class="selection">gardeners</span> are ready to help you
+                                </p>
+                                <button class="prices__button">Contact us</button>
+                            </div>
+                            <img src="./assets/img/leafs-prices.png" alt="Prices leafs" class="prices-leafs" width="152" height="174">
                         </div>  
                     </div>
                 </div>
@@ -210,15 +216,15 @@
                         <h2 class="contacts__header">
                             Contact us
                         </h2>
-                        <!-- <div class="prices__items"> -->
-                            <div class="city-dropdown">
-                                <!-- <form> -->
-                                    <!-- <div class="city__item"> -->
-                                        <select class="city-select">
-                                            <option>City</option>
-                                        </select>
-                                    <!-- </div> -->
-                            <!-- </div> -->
+                        <div class="city-dropdown">
+                            <select class="city-select">
+                                <option class="city-option">City</option>
+                                <option class="city">Canandaigua, NY</option>
+                                <option class="city">New York City</option>
+                                <option class="city">Yonkers, NY</option>
+                                <option class="city">Sherrill, NY</option>
+                            </select>
+                            <img src="./assets/img/accordion_btn_contacts.png" alt="Acrd" class="contacts__accordion">
                         </div>
                     </div>
                 </div>

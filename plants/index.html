@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Plants</title>
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./style.css">
         <link rel="icon" href="./assets/svg/favicon.svg">
     </head>
     <body>
@@ -13,10 +13,8 @@
             <div class="wrapper">
                 <div class="header__wrapper">
                     <div class="header__logo">
-                        <a href="/" class="header__logo-link">
-                            <img src="./assets/svg/plants-logo.svg" alt="Plants logo" class="header__logo-picture">
-                            Plants
-                        </a>
+                        <img src="./assets/svg/plants-logo.svg" alt="Plants logo" class="header__logo-picture">
+                        <span>Plants</span>
                     </div>
                     <nav class="header__nav">
                         <ul class="header__list">
@@ -35,9 +33,7 @@
             <section class="welcome" id="welcome">
                 <div class="wrapper">
                     <div class="welcome__wrap">
-                        <!-- <div class="leafs"> -->
-                            <img src="./assets/img/leafs-welcome.png" alt="Leafs picture" class="leafs-pic">
-                        <!-- </div> -->
+                        <img src="./assets/img/leafs-welcome.png" alt="Leafs picture" class="leafs-pic">
                         <div class="welcome__text">
                             <h1 class="welcome__title">
                                 We grow <span class="welcome__title-selection">plants</span> and give you oxygen
@@ -177,22 +173,22 @@
                             <div class="prices__level">
                                 <div class="prices__items">
                                     <div class="price__item">
-                                        <button class="price-type">
-                                            <span class="button-text">Basics</span>
+                                        <div class="price-type">
+                                            <span class="price-type-text">Basics</span>
                                             <img src="./assets/img/accordion_btn_prices.png" alt="Acrd" class="prices_accordion" width="16" height="16">
-                                        </button>
+                                        </div>
                                     </div>
                                     <div class="price__item">
-                                        <button class="price-type">
-                                            <span class="button-text">Standard</span>
+                                        <div class="price-type">
+                                            <span class="price-type-text">Standard</span>
                                             <img src="./assets/img/accordion_btn_prices.png" alt="Acrd" class="prices_accordion" width="16" height="16">
-                                        </button>
+                                        </div>
                                     </div>
                                     <div class="price__item">
-                                        <button class="price-type">
-                                            <span class="button-text">Pro care</span>
+                                        <div class="price-type">
+                                            <span class="price-type-text">Pro care</span>
                                             <img src="./assets/img/accordion_btn_prices.png" alt="Acrd" class="prices_accordion" width="16" height="16">
-                                        </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -265,5 +261,6 @@
                 </div>
             </div>
         </footer>
+        <script src="./index.js"></script>
     </body>
 </html>

@@ -305,8 +305,13 @@ p {
     border-radius: 5px;
     margin-right: 38px;
 }
+.service__button.active {
+    background-color: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+}
 .service__button:hover,
-.service__button:focus,
+/* .service__button:focus, */
 .service__button:active {
     background-color: var(--orange);
     color: var(--white);

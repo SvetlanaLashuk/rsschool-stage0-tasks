@@ -110,7 +110,7 @@ p {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 50px;
+    line-height: 47px;
     column-gap: 47px;
     padding-left: 0;
     margin: 0;
@@ -229,8 +229,12 @@ p {
     row-gap: 153px;
 }
 .about__text {
-    max-width: 605px;
-    margin-right: 153px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 40px;
+    min-width: 605px;
+    /* margin-right: 153px; */
 }
 .about__title {
     font-family: 'Inika';
@@ -242,8 +246,8 @@ p {
     max-width: 463px;
     margin: 0;
     padding: 0;
-    margin-bottom: 40px;
-    padding-top: 68px;
+    /* margin-bottom: 40px; */
+    padding-top: 69px;
 }
 .about__title-selection {
     font-family: 'Inika';
@@ -261,10 +265,14 @@ p {
     line-height: 30px;
     color: var(--text-color);
     margin: 0;
-    margin-bottom: 61px;
+    /* margin-bottom: 61px; */
 }
 .houseplant-pic {
-    max-width: 464px;
+    width: 464px;
+    height: 479px;
+    background-image: url('./assets/img/houseplant.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 /* about styles end */
 
@@ -650,17 +658,28 @@ select {
 @media (max-width: 768px) {
     .wrapper {
         max-width: 668px;
-        margin: 0 auto;
+        padding: 0;
     }
-    /* .welcome__wrap {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        column-gap: 225px;
-    } */
+    .header {
+        /* padding: 35px 0; */
+        padding: 35px 0 35px 10px;
+    }
+    .header__logo {
+        margin-right: 139px;
+    }
+    .welcome {
+        /* padding: 40px 0 70px 0; */
+        padding: 40px 0 70px 10px;
+    }
+    .welcome__wrap {
+        flex-direction: row-reverse;
+        /* justify-content: center; */
+        column-gap: 42px;
+    }
     .welcome__text {
-        row-gap: 32px;
+        row-gap: 33px;
         max-width: 346px;
+        padding-top: 0;
         /* padding-top: 36px; */
     }
     .welcome__title {
@@ -675,9 +694,45 @@ select {
     .leafs-pic { 
         width: 280px;
         height: 254px;
-        background-image: url('./assets/img/leafs-welcome.png');
-        background-size: contain;
-        background-repeat: no-repeat;
+    }
+    .about {
+        padding: 40px 0 95px 0;
+    }
+    .about__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+        max-width: 605px;
+        /* margin-right: 153px; */
+    }
+    .about__wrap {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+    }
+    .about__text { 
+        flex: 1;
+    }
+    .about__title {
+        font-size: 35px;
+        line-height: 46px;
+        text-align: center;
+        padding: 0;
+        /* max-width: 463px; */
+        /* margin-bottom: 40px; */
+        /* padding-top: 68px; */
+    }
+    .about__title-selection {
+        font-size: 35px;
+        line-height: 46px;
+    }
+    .about__subtitle {
+        flex: 1;
+    }
+    .houseplant-pic {
+        width: 250px;
+        height: 258px;
     }
 }
 

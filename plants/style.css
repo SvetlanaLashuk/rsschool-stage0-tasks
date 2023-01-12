@@ -336,6 +336,9 @@ p {
     border: 1px solid #E3E1D5;
     border-radius: 20px;
 }
+.service__item.blur {
+    filter: blur(2px);
+}
 .service__item:hover {
     border: 1px solid var(--green);
     cursor: pointer;

@@ -158,9 +158,16 @@ p {
 .leafs-pic { 
     width: 448px;
     height: 407px;
+    background-image: url('./assets/img/leafs-welcome.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .welcome__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+    align-items: flex-start;
     max-width: 549px;
     padding-top: 36px;
 }
@@ -173,7 +180,7 @@ p {
     color: #717171;
     margin: 0;
     padding: 0;
-    margin-bottom: 44px;
+    /* margin-bottom: 44px; */
 }
 .welcome__title-selection {
     color: var(--green);
@@ -186,10 +193,10 @@ p {
     line-height: 35px;
     color: var(--text-color);
     margin: 0;
-    margin-bottom: 46px;
+    /* margin-bottom: 46px; */
 }
 .welcome__section-more {
-    padding: 10px 27px;
+    padding: 10px 25px;
     text-transform: uppercase;
     font-family: 'Inter';
     font-style: normal;
@@ -311,7 +318,6 @@ p {
     cursor: pointer;
 }
 .service__button:hover,
-/* .service__button:focus, */
 .service__button:active {
     background-color: var(--orange);
     color: var(--white);
@@ -641,3 +647,43 @@ select {
     opacity: .70;
 }
 /* footer styles end */
+@media (max-width: 768px) {
+    .wrapper {
+        max-width: 668px;
+        margin: 0 auto;
+    }
+    /* .welcome__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        column-gap: 225px;
+    } */
+    .welcome__text {
+        row-gap: 32px;
+        max-width: 346px;
+        /* padding-top: 36px; */
+    }
+    .welcome__title {
+        font-size: 35px;
+        /* margin-bottom: 44px; */
+    }
+    .welcome__subtitle {
+        font-size: 16px;
+        line-height: 25px;
+        padding-left: 5px;
+    }
+    .leafs-pic { 
+        width: 280px;
+        height: 254px;
+        background-image: url('./assets/img/leafs-welcome.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 380px) {
+    .wrapper {
+        max-width: 330px;
+        margin: 0 auto;
+    }
+}

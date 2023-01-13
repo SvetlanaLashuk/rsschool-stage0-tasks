@@ -233,7 +233,7 @@ p {
     flex-direction: column;
     align-items: flex-start;
     row-gap: 40px;
-    min-width: 605px;
+    width: 605px;
     /* margin-right: 153px; */
 }
 .about__title {
@@ -243,7 +243,7 @@ p {
     font-size: 40px;
     line-height: 52px;
     color: var(--green);
-    max-width: 463px;
+    width: 463px;
     margin: 0;
     padding: 0;
     /* margin-bottom: 40px; */
@@ -655,80 +655,67 @@ select {
     opacity: .70;
 }
 /* footer styles end */
+
 @media (max-width: 768px) {
     .wrapper {
         max-width: 668px;
         padding: 0;
     }
     .header {
-        /* padding: 35px 0; */
         padding: 35px 0 35px 10px;
     }
     .header__logo {
         margin-right: 139px;
     }
     .welcome {
-        /* padding: 40px 0 70px 0; */
         padding: 40px 0 70px 10px;
     }
     .welcome__wrap {
         flex-direction: row-reverse;
-        /* justify-content: center; */
         column-gap: 42px;
     }
     .welcome__text {
         row-gap: 33px;
         max-width: 346px;
         padding-top: 0;
-        /* padding-top: 36px; */
     }
     .welcome__title {
         font-size: 35px;
-        /* margin-bottom: 44px; */
     }
     .welcome__subtitle {
         font-size: 16px;
         line-height: 25px;
-        padding-left: 5px;
+        padding-left: 7px;
     }
     .leafs-pic { 
         width: 280px;
         height: 254px;
     }
     .about {
-        padding: 40px 0 95px 0;
-    }
-    .about__text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        row-gap: 40px;
-        max-width: 605px;
-        /* margin-right: 153px; */
+        padding: 40px 0 95px 11px;
     }
     .about__wrap {
         flex-direction: column;
         align-items: center;
         row-gap: 40px;
     }
-    .about__text { 
-        flex: 1;
+    .about__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 49px;
+        width: 668px;
+        margin-bottom: 30px;
     }
     .about__title {
         font-size: 35px;
         line-height: 46px;
         text-align: center;
         padding: 0;
-        /* max-width: 463px; */
-        /* margin-bottom: 40px; */
-        /* padding-top: 68px; */
     }
     .about__title-selection {
         font-size: 35px;
         line-height: 46px;
-    }
-    .about__subtitle {
-        flex: 1;
     }
     .houseplant-pic {
         width: 250px;

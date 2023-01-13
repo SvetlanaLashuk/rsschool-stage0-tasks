@@ -299,12 +299,11 @@ p {
     font-size: 40px;
     line-height: 52px;
     max-width: 306px;
-    color: var(--green);
-    
+    color: var(--green);  
 }
 .service__btn-group {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 .service__button {
     padding: 12px 40px;
@@ -318,6 +317,7 @@ p {
     color: var(--orange);
     border: 1px solid var(--orange); 
     border-radius: 5px;
+    padding: 11px 40px;
     margin-right: 38px;
 }
 .service__button.active {
@@ -360,17 +360,35 @@ p {
 .service__item:last-child {
     margin-right: 0;
 }
- .service__item-pic img{
-   border-radius: 20px 20px 0 0;
+.service__item-pic {
+    width: 328px;
+    height: 349px;
+    border-radius: 20px 20px 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.service_item-thumb {
-    display: block;
-    margin: 0;
-    padding: 0;
+.pic1 {
+    background-image: url('./assets/img/service-pic-1.png');
+}
+.pic2 {
+    background-image: url('./assets/img/service-pic-2.png');
+}
+.pic3 {
+    background-image: url('./assets/img/service-pic-3.png');
+}
+.pic4 {
+    background-image: url('./assets/img/service-pic-4.png');
+}
+.pic5 {
+    background-image: url('./assets/img/service-pic-5.png');
+}
+.pic6 {
+    background-image: url('./assets/img/service-pic-6.png');
 }
 .service__item-text {
-    padding: 8px 30px 35px;
+    padding: 10px 30px 36px;
     text-align: center;
+    border-radius: 0px 0px 20px 20px;
 }
 .service__item-header {
     margin: 0;
@@ -662,13 +680,13 @@ select {
         padding: 0;
     }
     .header {
-        padding: 35px 0 35px 10px;
+        padding: 35px 0 35px 12px;
     }
     .header__logo {
         margin-right: 139px;
     }
     .welcome {
-        padding: 40px 0 70px 10px;
+        padding: 40px 0 70px 12px;
     }
     .welcome__wrap {
         flex-direction: row-reverse;
@@ -692,7 +710,7 @@ select {
         height: 254px;
     }
     .about {
-        padding: 40px 0 95px 11px;
+        padding: 40px 0 94px 12px;
     }
     .about__wrap {
         flex-direction: column;
@@ -720,6 +738,39 @@ select {
     .houseplant-pic {
         width: 250px;
         height: 258px;
+    }
+    .service {
+        padding: 60px 0 71px 12px;
+    }
+    .service__header {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        row-gap: 41px;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .service__title {
+        font-size: 35px;
+        line-height: 46px;
+    }
+    .service__items {
+        row-gap: 38px;
+        column-gap: 106px;
+    }
+    .service__item {  
+        width: 281px;
+    }
+    .service__item-pic {
+        width: 379px;
+        height: 349px;
+        background-size: contain;
+    }
+    .service__item-text {
+        padding: 9px 39px 18px;
+    }
+    .service__item-header {
+        margin-bottom: 8px;
     }
 }
 

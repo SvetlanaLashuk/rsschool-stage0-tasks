@@ -629,12 +629,13 @@ select {
 }
 .footer__wrapper {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 .footer__data {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .footer__data p {
     margin-right: 26px;
@@ -693,13 +694,13 @@ select {
         padding: 0;
     }
     .header {
-        padding: 35px 0 35px 12px;
+        padding: 35px 0 35px 0;
     }
     .header__logo {
         margin-right: 139px;
     }
     .welcome {
-        padding: 40px 0 70px 12px;
+        padding: 40px 0 70px 0;
     }
     .welcome__wrap {
         flex-direction: row-reverse;
@@ -723,7 +724,7 @@ select {
         height: 254px;
     }
     .about {
-        padding: 40px 0 94px 12px;
+        padding: 40px 0 94px 0;
     }
     .about__wrap {
         flex-direction: column;
@@ -753,7 +754,7 @@ select {
         height: 258px;
     }
     .service {
-        padding: 60px 0 71px 12px;
+        padding: 60px 0 71px 0;
     }
     .service__header {
         flex-direction: column;
@@ -786,7 +787,7 @@ select {
         margin-bottom: 8px;
     }
     .prices {
-        padding: 40px 0 88px 13px;
+        padding: 40px 0 88px 0;
         height: 585px;
     }
     .prices__wrap {
@@ -809,7 +810,7 @@ select {
         max-width: 296px;
     }
     .contacts {
-        padding: 40px 0 0 13px;
+        padding: 40px 0 0 0;
     }
     .contacts__wrap {
         flex-direction: column;
@@ -834,6 +835,34 @@ select {
         padding-top: 0;
         margin-bottom: 249px;
         order: 2;
+    }
+    .footer {
+        padding: 33px 0 18px 0;
+    }
+    .footer__wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        row-gap: 16px;
+    }
+    .footer__data {
+        order: 1;
+    }
+    .footer__data p {
+        margin-right: 21px;
+    }
+    .footer__text {
+        line-height: 24px;
+        order: 2;
+    }
+    .github-link {
+        margin-right: 0;
+    }
+    .social-list {
+        order: 3;
+    }
+    .social-list {
+        padding-top: 10px;
     }
 }
 

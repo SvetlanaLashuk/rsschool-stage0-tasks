@@ -61,9 +61,6 @@ html {
 body{
     margin: 0;
 }
-img {
-    max-width: 100%;
-}
 p {
     margin: 0;
 }
@@ -77,6 +74,7 @@ p {
 .header {
     background-color: var(--background-color1);
     padding: 42px 0;
+    width: 100%;
 }
 .header__wrapper {
     display: flex;
@@ -541,6 +539,7 @@ p {
 .contacts {
     background-color: var(--background-color1);
     padding-top: 53px;
+    width: 100%;
 }
 .contacts__wrap {
     display: flex;
@@ -626,6 +625,7 @@ select {
 .footer {
     background-color: var(--background-color2);
     padding: 40px 0;
+    width: 100%;
 }
 .footer__wrapper {
     display: flex;
@@ -691,7 +691,8 @@ select {
 @media (max-width: 768px) {
     .wrapper {
         max-width: 668px;
-        padding: 0;
+        margin: 0 auto;
+        padding: 0;;
     }
     .header {
         padding: 35px 0 35px 0;
@@ -703,13 +704,13 @@ select {
         padding: 40px 0 70px 0;
     }
     .welcome__wrap {
-        flex-direction: row-reverse;
         column-gap: 42px;
     }
     .welcome__text {
         row-gap: 33px;
         max-width: 346px;
         padding-top: 0;
+        order: 1;
     }
     .welcome__title {
         font-size: 35px;
@@ -722,6 +723,7 @@ select {
     .leafs-pic { 
         width: 280px;
         height: 254px;
+        order: 2;
     }
     .about {
         padding: 40px 0 94px 0;
@@ -776,7 +778,7 @@ select {
         width: 281px;
     }
     .service__item-pic {
-        width: 379px;
+        width: 281px;
         height: 349px;
         background-size: contain;
     }
@@ -826,7 +828,7 @@ select {
     .contacts-pic {
         width: 200px;
         height: 248px;
-        margin-right: 0;
+        margin-left: 130px;
         order: 3;
     }
     .city-dropdown {
@@ -838,6 +840,7 @@ select {
     }
     .footer {
         padding: 33px 0 18px 0;
+        /* height: 181px; */
     }
     .footer__wrapper {
         flex-direction: column;
@@ -849,7 +852,7 @@ select {
         order: 1;
     }
     .footer__data p {
-        margin-right: 21px;
+        margin-right: 22px;
     }
     .footer__text {
         line-height: 24px;

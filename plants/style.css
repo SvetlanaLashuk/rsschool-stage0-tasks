@@ -580,7 +580,7 @@ img {
     line-height: 52px;
     color: var(--green);
     padding-top: 7px;
-    margin-right: 64px;
+    margin-right: 62px;
 }
 .contacts-pic {
     width: 400px;
@@ -596,9 +596,13 @@ img {
     width: 100%;
 }
 .city-dropdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     height: 50px;
     width: 450px;
-    padding-top: 97px;
+    padding-top: 124px;
 }
 select {
     -webkit-appearance: none;
@@ -612,7 +616,7 @@ select {
     font-size: 20px;
     letter-spacing: 0.05em;
     line-height: 40px; 
-    padding: 5px 226px 5px 20px;
+    padding: 5px 226px 5px 18px;
     color: #717171;
     min-width: 450px;
     background: #D6E7D2;
@@ -641,9 +645,11 @@ select {
     transition: .6s;  
 }
 .contacts__accordion {
-    position: relative;
-    bottom: 33px;
-    left: 400px;
+    position: absolute;
+    right: 133px;
+    /* right: 9%; */
+    /* bottom: 33px; */
+    /* left: 100px; */
 }
 /* contacts styles end */
 
@@ -724,7 +730,8 @@ select {
         padding: 35px 0;
     }
     .header__logo {
-        margin-right: 139px;
+        /* margin-right: 139px; */
+        justify-content: space-between;
     }
     .welcome {
         padding: 40px 0 70px 0;
@@ -869,6 +876,13 @@ select {
         padding-top: 0;
         margin-bottom: 249px;
         order: 2;
+    }
+    .contacts__accordion {
+        position: absolute;
+        right: 190px;
+        /* right: 9%; */
+        /* bottom: 33px; */
+        /* left: 100px; */
     }
     .footer {
         padding: 33px 0 18px 0;
@@ -1097,6 +1111,13 @@ select {
     }
     .city-select { 
         min-width: 300px;
+    }
+    .contacts__accordion {
+        position: absolute;
+        right: 65px;
+        /* right: 9%; */
+        /* bottom: 33px; */
+        /* left: 100px; */
     }
     .footer {
         padding: 22px 0 7px 0;

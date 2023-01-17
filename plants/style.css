@@ -61,6 +61,9 @@ html {
 body{
     margin: 0;
 }
+.lock {
+    overflow: hidden;
+}
 p {
     margin: 0;
 }
@@ -167,8 +170,6 @@ img {
 .burger__line_third {
     bottom: 33.3%;
     transform: translateY(33.3%);
-    /* top: 66.6%; 
-    transform: translateY(-66.6%); */
 }
 .burger__line_forth {
     bottom: 0;
@@ -597,7 +598,6 @@ img {
 }
 .contacts__wrap {
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: row;
     justify-content: space-between;
 }
@@ -616,11 +616,6 @@ img {
 .contacts-pic {
     width: 400px;
     height: 497px;
-    /* background-image: url('./assets/img/contact_woman.png');
-    background-size: contain;
-    background-repeat: no-repeat; */
-    /* padding-top: 53px;
-    padding-bottom: 0.01px; */
     margin-right: 113px;
 }
 .woman {
@@ -944,6 +939,7 @@ select {
     .social-list {
         padding-top: 10px;
     }
+}
 
 @media screen and (max-width: 380px) {
     .wrapper {
@@ -955,12 +951,13 @@ select {
         padding: 36px 0 36px 0;
     }
     .header__logo {
-        margin-right: 139px;
-        /* z-index: 50; */
+        /* margin-right: 139px; */
+        line-height: 21px;
+        position: relative;
+        z-index: 50;
     }
     .header__burger {
         display: block;
-        overflow: hidden;
     }
     .header__nav {
         width: 100%;
@@ -968,13 +965,10 @@ select {
         position: fixed;
         top: 0;
         left: 0;
-        /* background-color: var(--background-color1); */
         z-index: 10;
-        /* padding: 60px 30px 20px; */
         transform: translateX(-100%);
         background: #191919cf;
-        transition: transform 1s;
-        /* transition: all 0.8s ease; */
+        transition: all 0.8s ease;
     }
     .header__nav.active {
         transform: translateX(0);
@@ -982,7 +976,9 @@ select {
     .header__list {
         flex-direction: column;
         font-size: 18px;
-        background-color: var(--background-color1);
+        padding: 35px 30px 20px;
+        background-color: #D6E7D2;
+        text-align: center;
     }
     .header__item {
         width: 100%;

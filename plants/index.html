@@ -18,13 +18,23 @@
                     </div>
                     <nav class="header__nav">
                         <ul class="header__list">
-                            <li class="header__item"><a href="#home" class="header__link default">Home</a></li>
+                            <li class="header__item"><a href="#home" class="header__link">Home</a></li>
                             <li class="header__item"><a href="#about" class="header__link">About us</a></li>
                             <li class="header__item"><a href="#service" class="header__link">Service</a></li>
                             <li class="header__item"><a href="#prices" class="header__link">Price</a></li>
                             <li class="header__item"><a href="#contacts" class="header__link">Contacts</a></li>
                         </ul>
+                    <div class="header__nav-close">
+                        <span class="header__nav-close-line"></span>
+                        <span class="header__nav-close-line"></span>
+                    </div>
                     </nav>
+                    <div class="header__burger burger">
+                        <span class="burger__line burger__line_first"></span>
+                        <span class="burger__line burger__line_second"></span>
+                        <span class="burger__line burger__line_third"></span>
+                        <span class="burger__line burger__line_forth"></span>
+                    </div>
                 </div>
             </div>
         </header>
@@ -43,7 +53,9 @@
                             <p class="welcome__subtitle">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                             </p>
-                            <button class="welcome__section-more">Learn more</button>
+                            <form action="#about">
+                                <button class="welcome__section-more">Learn more</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -199,7 +211,9 @@
                             <p class="prices__title">
                                 Our best <span class="selection">gardeners</span> are ready to help you
                             </p>
-                            <button class="prices__button">Contact us</button>
+                            <form action="#contacts">
+                                <button class="prices__button">Contact us</button>
+                            </form>
                             <div class="prices-leafs">
                                 <img src="./assets/img/leafs-prices.png" alt="Prices leafs" class="pr-leafs">
                             </div>
@@ -260,6 +274,7 @@
             </div>
         </footer>
         <script src="./index.js"></script>
+        <script src="js/burger.js"></script>
         <script src="js/blur.js"></script>
     </body>
 </html>

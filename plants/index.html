@@ -18,13 +18,23 @@
                     </div>
                     <nav class="header__nav">
                         <ul class="header__list">
-                            <li class="header__item"><a href="#home" class="header__link default">Home</a></li>
+                            <li class="header__item"><a href="#home" class="header__link">Home</a></li>
                             <li class="header__item"><a href="#about" class="header__link">About us</a></li>
                             <li class="header__item"><a href="#service" class="header__link">Service</a></li>
                             <li class="header__item"><a href="#prices" class="header__link">Price</a></li>
                             <li class="header__item"><a href="#contacts" class="header__link">Contacts</a></li>
                         </ul>
+                    <div class="header__nav-close">
+                        <span class="header__nav-close-line"></span>
+                        <span class="header__nav-close-line"></span>
+                    </div>
                     </nav>
+                    <div class="header__burger burger">
+                        <span class="burger__line burger__line_first"></span>
+                        <span class="burger__line burger__line_second"></span>
+                        <span class="burger__line burger__line_third"></span>
+                        <span class="burger__line burger__line_forth"></span>
+                    </div>
                 </div>
             </div>
         </header>
@@ -33,7 +43,9 @@
             <section class="welcome" id="welcome">
                 <div class="wrapper">
                     <div class="welcome__wrap">
-                        <img src="./assets/img/leafs-welcome.png" alt="Leafs picture" class="leafs-pic">
+                        <div class="leafs-pic">
+                            <img src="./assets/img/leafs-welcome.png" alt="Welcome leafs" class="leafs">
+                        </div>
                         <div class="welcome__text">
                             <h1 class="welcome__title">
                                 We grow <span class="welcome__title-selection">plants</span> and give you oxygen
@@ -41,7 +53,9 @@
                             <p class="welcome__subtitle">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                             </p>
-                            <button class="welcome__section-more">Learn more</button>
+                            <form action="#about">
+                                <button class="welcome__section-more">Learn more</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -58,7 +72,7 @@
                             </p>
                         </div>
                         <div class="houseplant-pic">
-                            <img src="./assets/img/houseplant.png" alt="Houseplant" class="houseplant-pic">
+                            <img src="./assets/img/houseplant.png" alt="houseplant" class="houseplant">
                         </div>
                     </div>
                 </div>
@@ -84,7 +98,7 @@
                     <div class="service__items">
                         <div class="service__item">
                             <div class="service__item-pic">
-                                <img src="./assets/img/service-pic-1.png" alt="Garden care" class="service_item-thumb">
+                                <img src="./assets/img/service-pic-1.png" alt="pic1" style="filter: contrast(0.83)" class="pic">
                             </div>
                             <div class="service__item-text">
                                 <h3 class="service__item-header garden">
@@ -97,7 +111,7 @@
                         </div>
                         <div class="service__item">
                             <div class="service__item-pic">
-                                <img src="./assets/img/service-pic-2.png" alt="Planting" class="service_item-thumb">
+                                <img src="./assets/img/service-pic-2.png" alt="pic2" class="pic">
                             </div>
                             <div class="service__item-text">
                                 <h3 class="service__item-header planting">
@@ -110,7 +124,7 @@
                         </div>
                         <div class="service__item">
                             <div class="service__item-pic">
-                                <img src="./assets/img/service-pic-3.png" alt="Lawn care" class="service_item-thumb">
+                                <img src="./assets/img/service-pic-3.png" alt="pic3" class="pic">
                             </div>
                             <div class="service__item-text">
                                 <h3 class="service__item-header lawn">
@@ -123,7 +137,7 @@
                         </div>
                         <div class="service__item">
                             <div class="service__item-pic">
-                                <img src="./assets/img/service-pic-4.png" alt="Planting" class="service_item-thumb">
+                                <img src="./assets/img/service-pic-4.png" alt="pic4" class="pic">
                             </div>
                             <div class="service__item-text">
                                 <h3 class="service__item-header planting">
@@ -136,7 +150,7 @@
                         </div>
                         <div class="service__item">
                             <div class="service__item-pic">
-                                <img src="./assets/img/service-pic-5.png" alt="Garden care" class="service_item-thumb">
+                                <img src="./assets/img/service-pic-5.png" alt="pic5" class="pic">
                             </div>
                             <div class="service__item-text">
                                 <h3 class="service__item-header garden">
@@ -149,7 +163,7 @@
                         </div>
                         <div class="service__item">
                             <div class="service__item-pic">
-                                <img src="./assets/img/service-pic-6.png" alt="Planting" class="service_item-thumb">
+                                <img src="./assets/img/service-pic-6.png" alt="pic6" class="pic">
                             </div>
                             <div class="service__item-text">
                                 <h3 class="service__item-header planting">
@@ -193,34 +207,33 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="left-block">
-                            <div class="prices__text">
-                                <p class="prices__title">
-                                    Our best <span class="selection">gardeners</span> are ready to help you
-                                </p>
+                        <div class="prices__text">
+                            <p class="prices__title">
+                                Our best <span class="selection">gardeners</span> are ready to help you
+                            </p>
+                            <form action="#contacts">
                                 <button class="prices__button">Contact us</button>
+                            </form>
+                            <div class="prices-leafs">
+                                <img src="./assets/img/leafs-prices.png" alt="Prices leafs" class="pr-leafs">
                             </div>
-                            <img src="./assets/img/leafs-prices.png" alt="Prices leafs" class="prices-leafs" width="152" height="174">
-                        </div>  
+                        </div>
                     </div>
                 </div>
             </section>
             <section class="contacts" id="contacts">
                 <div class="wrapper">
                     <div class="contacts__wrap">
-                        <img src="./assets/img/contact_woman.png" alt="Contact picture" class="contacts-pic">
+                        <div class="contacts-pic">
+                            <img src="./assets/img/contact_woman.png" alt="Contacts pic" class="woman">
+                        </div>
                         <h2 class="contacts__header">
                             Contact us
                         </h2>
-                        <div class="city-dropdown">
-                            <select class="city-select">
-                                <option class="city-option">City</option>
-                                <option class="city">Canandaigua, NY</option>
-                                <option class="city">New York City</option>
-                                <option class="city">Yonkers, NY</option>
-                                <option class="city">Sherrill, NY</option>
-                            </select>
-                            <img src="./assets/img/accordion_btn_contacts.png" alt="Acrd" class="contacts__accordion">
+                        <div class="accordion">
+                            <div class="container">
+                                <div class="label">City</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -262,5 +275,7 @@
             </div>
         </footer>
         <script src="./index.js"></script>
+        <script src="js/burger.js"></script>
+        <script src="js/blur.js"></script>
     </body>
 </html>

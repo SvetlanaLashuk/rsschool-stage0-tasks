@@ -2,16 +2,24 @@ const serviceButtons = document.querySelectorAll('.service__button');
 serviceButtons.forEach((serviceButton) => {
     serviceButton.addEventListener('click', () => {
         const serviceItemsIsBlur = document.querySelectorAll('.service__item.blur');
-        serviceItemsIsBlur.forEach((serviceItemIsBlur) => {
-            serviceItemIsBlur.classList.remove('blur');
+        serviceItemsIsBlur.forEach((serviceItemIsBlur, i) => {
+            // alert(i);
+            if (i === 2) {
+                serviceItemIsBlur.classList.remove('blur'); 
+            } 
+            //serviceItemIsBlur.classList.remove('blur');
         });
 
         if (serviceButton.classList.contains('active')) {
             serviceButton.classList.remove('active');
         } else {
             const serviceButtonsIsActive = document.querySelectorAll('.service__button.active');
-            serviceButtonsIsActive.forEach((serviceButtonIsActive) => {
-                serviceButtonIsActive.classList.remove('active');
+            serviceButtonsIsActive.forEach((serviceButtonIsActive, i) => {
+                alert(serviceButtonIsActive);
+                if (i > 2) {
+                    serviceButtonIsActive.classList.remove('active'); 
+                } 
+                //serviceButtonIsActive.classList.remove('active');
             });
 
             serviceButton.classList.add('active');
@@ -31,6 +39,7 @@ serviceButtons.forEach((serviceButton) => {
                         serviceItem.classList.add('blur');
                     }
                 }
+
             });
         }
     });

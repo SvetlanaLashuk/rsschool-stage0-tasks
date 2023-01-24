@@ -342,13 +342,14 @@ img {
     background-color: var(--orange);
     color: var(--white);
     cursor: pointer;
+    transition: 0.5s;
 }
 .service__button:hover,
 .service__button:active {
     background-color: var(--orange);
     color: var(--white);
     cursor: pointer;
-    transition: 1s;
+    transition: 0.5s;
 }
 .service__button:last-child {
     margin-right: 0;
@@ -370,6 +371,7 @@ img {
 }
 .service__item.blur {
     filter: blur(2px);
+    transition: 1s;
 }
 .service__item:hover {
     border: 1px solid var(--green);

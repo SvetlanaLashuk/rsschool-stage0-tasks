@@ -52,9 +52,9 @@
     --text-color: #636060;
     --service-item-border: #E3E1D5;
 }
-* {
+*::before, *::after, * {
     box-sizing: border-box;
-    background-size: 100%;
+    /* background-size: 100%; */
 }
 html {
     scroll-behavior: smooth;
@@ -442,16 +442,18 @@ img {
     padding: 34px 41px;
 }
 .price__item {
-    display: flex;
+    /* display: flex; */
     margin-bottom: 32px;
+    width: 250px;
+    position: relative;
 }
 .price-type {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
     align-items: center;
     flex: 1;
-    column-gap: 65px;
+    /* column-gap: 65px; */
     background: var(--background-color1);
     border-radius: 20px;
     border: none;
@@ -460,14 +462,43 @@ img {
     text-align: left;
     cursor: pointer;
     height: 50px;
-}
-.price-type-text {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
+    position: relative;
+    
+    /* overflow: hidden; */
 }
+.price-button {
+    position: absolute;
+    z-index: 10;
+    top: 16px;
+    right: 38px;
+    width: 16px;
+    height: 16px;
+    background-color: #D9D9D9;
+    /* background-color: black; */
+    border: 0;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+.price-button:before {
+    content: url("./assets/svg/arrow-gray.svg");
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    /* left: 40px; */
+}
+/* .price-type-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+} */
  .price__item:last-child {
     margin-bottom: 0;
 }
@@ -566,9 +597,14 @@ img {
 .container {
     display: flex;
     flex-direction: column;
-    row-gap: 27px;
+    /* row-gap: 27px; */
     width: 450px;
-    height: 50px;
+    /* height: 50px; */
+}
+.container .open {
+    max-height: 234px;
+    opacity: 1;
+    overflow: overlay;
 }
 .options {
     font-family: 'Inter';
@@ -578,10 +614,10 @@ img {
     line-height: 40px;
     letter-spacing: 0.05em;
     color: var(--green);
-    /* max-height: 0; */
+    max-height: 0;
     width: 100%;
-    /* opacity: 0; */
-    /* overflow: hidden; */
+    opacity: 0; 
+    overflow: hidden;
     transition: all 0.5s ease;
     order: 2;
 }
@@ -596,11 +632,11 @@ img {
 .option label {
     cursor: pointer;
     border-bottom: 1px solid #D9D9D9;
-    /* padding-left: 5px; */
+    padding-left: 5px;
     display: block;
     width: 100%;
     transition: all 0.5s ease;
-  }
+}
 .option:hover label {
     border-bottom: 1px solid #717171;
 }
@@ -608,6 +644,7 @@ img {
     display: none;
 }
 .label {
+    height: 50px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -616,15 +653,14 @@ img {
     line-height: 40px; 
     color: #717171;
     cursor: pointer;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     position: relative;
-    height: inherit;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 5px 54px 0 20px;
     order: 1;
 }
-.label:hover,
+/* .label:hover, */
 .label:focus,
 .label:active {
     background-color: #C1E698;
@@ -646,7 +682,7 @@ img {
     transition: all 0.5s ease;
   }
 .label:after {
-    content: url("./assets/img/arrow_white.png");
+    content: url("./assets/svg/arrow-white.svg");
     position: absolute;
     top: 1px;
     right: 40px;
@@ -1208,10 +1244,11 @@ img {
     .price-type {
         column-gap: 35px;
         padding: 15px 40px 15px 30px;
-    }
-    .price-type-text {
         font-size: 15px;
     }
+    /* .price-type-text {
+        font-size: 15px;
+    } */
     .prices__text {
         display: block;
         text-align: center;

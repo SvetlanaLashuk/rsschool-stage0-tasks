@@ -566,8 +566,46 @@ img {
 .container {
     display: flex;
     flex-direction: column;
+    row-gap: 27px;
     width: 450px;
     height: 50px;
+}
+.options {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: var(--green);
+    /* max-height: 0; */
+    width: 100%;
+    /* opacity: 0; */
+    /* overflow: hidden; */
+    transition: all 0.5s ease;
+    order: 2;
+}
+.option {
+    padding: 0 35px;
+    /* margin-bottom: 17px; */
+    margin-bottom: 10px;
+}
+.option:hover {
+    color: #717171;
+}
+.option label {
+    cursor: pointer;
+    border-bottom: 1px solid #D9D9D9;
+    /* padding-left: 5px; */
+    display: block;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+.option:hover label {
+    border-bottom: 1px solid #717171;
+}
+.option .radio {
+    display: none;
 }
 .label {
     font-family: 'Inter';
@@ -584,6 +622,7 @@ img {
     height: inherit;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 5px 54px 0 20px;
+    order: 1;
 }
 .label:hover,
 .label:focus,

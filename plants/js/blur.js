@@ -10,9 +10,13 @@ buttons.addEventListener('click', (event) => {
         if (serviceButton === event.target) {
             buttonTitle = serviceButton.textContent.trim().slice(0, length - 1);
 
-            function addBlurItem(title) {
+            function addBlurItem(title, isActive) {
                 serviceItems.forEach((serviceItem) => {
-                    if (serviceButton.textContent.includes(title)) {
+                    if (isActive) {
+                        if (serviceItem.textContent.includes(title)) {
+                            serviceItem.classList.add('blur');
+                        } 
+                    } else {
                         if (!serviceItem.textContent.includes(title)) {
                             serviceItem.classList.add('blur');
                         }
@@ -51,20 +55,27 @@ buttons.addEventListener('click', (event) => {
             }
 
             if (serviceButton.classList.contains('active')) {
-                isActive = true;
-                removeBlurItem(buttonTitle, isActive); 
+                let buttonsIsActive = document.querySelectorAll('.service__button.active');
+                if (buttonsIsActive.length !== 1) {
+                    isActive = true;
+                    addBlurItem(buttonTitle, isActive);
+                } else {
+                    isActive = true;
+                    removeBlurItem(buttonTitle, isActive);
+                }
+                buttonsClickCounter = 1;
                 serviceButton.classList.remove('active');
             } else {
                 if (serviceButton) {
-                     let serviceButtonsIsActive = document.querySelectorAll('.service__button.active');
-                     if (serviceButtonsIsActive.length !== 0 || buttonsClickCounter === 0) {
+                    let serviceButtonsIsActive = document.querySelectorAll('.service__button.active');
+                    if (serviceButtonsIsActive.length !== 0 || buttonsClickCounter === 0) {
                         buttonsClickCounter += 1;
-                     }
+                    }
                 }
                 if (buttonsClickCounter === serviceButtons.length) {
                     removeAllActiveButtons();
                     removeAllBlurItems();
-                    addBlurItem(buttonTitle);
+                    addBlurItem(buttonTitle, isActive);
                     serviceButton.classList.add('active');
                     buttonsClickCounter = 1;
                 } else if (buttonsClickCounter > 1) {
@@ -73,7 +84,8 @@ buttons.addEventListener('click', (event) => {
                     serviceButton.classList.add('active');
                     
                 } else {
-                    addBlurItem(buttonTitle);
+                    isActive = false;
+                    addBlurItem(buttonTitle, isActive);
                     serviceButton.classList.add('active');
                 }
             }

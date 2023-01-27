@@ -82,7 +82,6 @@ buttons.addEventListener('click', (event) => {
                     isActive = false;
                     removeBlurItem(buttonTitle, isActive);
                     serviceButton.classList.add('active');
-                    
                 } else {
                     isActive = false;
                     addBlurItem(buttonTitle, isActive);

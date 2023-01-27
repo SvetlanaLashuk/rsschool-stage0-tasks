@@ -462,14 +462,14 @@ img {
     padding: 16px 40px;
     text-align: left;
     cursor: pointer;
-    height: 50px;
+    /* height: 50px; */
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
-    position: relative;
-    /* overflow: hidden; */
+    /* position: relative; */
+    overflow: hidden;
     transition: all 0.5s ease;
 }
 .price-type.active {
@@ -478,7 +478,13 @@ img {
     border-radius: 20px 20px 0 0;
     padding: 16px 40px 10px;
 }
-.price-button {
+.price-type.active + .price-descr {
+    background-color: #D6E7D2;
+    height: 107px;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+}
+.accordion-button {
     position: absolute;
     z-index: 10;
     top: 16px;
@@ -491,51 +497,31 @@ img {
     pointer-events: none;
     transition: all 0.5s ease;
 }
-.price-button.active {
+.accordion-button.active {
     background-color: #AEA1A1;
     transform: rotate(-180deg);
 }
-.price-button:before {
+.accordion-button:before {
     content: url("./assets/svg/arrow-gray.svg");
     position: absolute;
     top: -4px;
     left: 5px;
 }
-.price-button.active:before {
+.accordion-button.active:before {
     content: url("./assets/svg/arrow-white.svg");
 }
-.price-descr {
+.price__item .price-descr {
     background-color: #D6E7D2;
-    /* border-radius: 20px;
-    max-width: 250px;
-    overflow: hidden;
-    opacity: 0;
-    max-height: 0; */
-    max-width: 250px;
-    border-radius: 0 0 20px 20px;
-    top: -15px;
-    /* padding-top: 15px; */
-    position: relative;
-    z-index: 5;
+    padding: 0 40px;
     height: 0;
-    transition: all 0.5s ease;
+    overflow: hidden; 
+    transition: all 0.4s ease;
 }
-/* .price-type .price-descr {
-    height: 135px;
-} */
-.price-type + .price-descr {
-    height: 0;
-    overflow-y: auto;
-    transition: all 0.5s ease;
-  }
-.price-type.active + .price-descr {
-    height: 135px;
-    overflow: hidden;
-  }
-.price-inner {
-    position: relative;
-    top: 15px;
-    padding: 0 45px 10px 40px;
+.line {
+    display: block;
+    height: 0.5px;
+    width: 165px;
+    background-color: #AEA1A1;
 }
 .price-text {
     font-family: 'Inter';
@@ -545,8 +531,7 @@ img {
     line-height: 10px;
     color: #717171;
     margin-bottom: 7px;
-    padding-top: 5px;
-    border-top: 0.5px solid #AEA1A1;
+    padding-top: 5px; 
 }
 .price-value {
     font-family: 'Inter';
@@ -585,19 +570,9 @@ img {
     color: #717171;
     padding: 3px 20px;
 }
-/* .price-type-text {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 20px;
-} */
  .price__item:last-child {
     margin-bottom: 0;
 }
-/* .price-type:hover {
-    background: #D6E7D2;
-} */
 .prices__text {
     display: flex;
     flex-direction: column;

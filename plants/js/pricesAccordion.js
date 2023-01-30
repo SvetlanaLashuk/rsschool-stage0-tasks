@@ -4,11 +4,12 @@ priceTypes.forEach((priceType) => {
     priceType.addEventListener('click', () =>{
         if (priceType.classList.contains('active')) {
             priceType.classList.remove('active');
-            priceType.parentElement.querySelector('.accordion-button').classList.remove('active');
+            priceType.parentElement.querySelector('.accordion-button').classList.toggle('active');
         } else {
             const priceTypesIsActive = document.querySelectorAll('.price-type.active');
             priceTypesIsActive.forEach((priceTypeIsActive) => {
                 priceTypeIsActive.classList.remove('active');
+                priceType.parentElement.querySelector('.accordion-button').classList.remove('active');
             });
 
             const priceButtonsIsActive = document.querySelectorAll('.price-button.active');
@@ -16,7 +17,7 @@ priceTypes.forEach((priceType) => {
                 priceButtonIsActive.classList.remove('active');
             });
 
-            priceType.classList.add('active'); 
+            priceType.classList.toggle('active'); 
             priceType.parentElement.querySelector('.accordion-button').classList.add('active');
         }
     });

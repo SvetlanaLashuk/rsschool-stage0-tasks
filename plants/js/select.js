@@ -1,10 +1,12 @@
 const contactsSelect = document.querySelector('.container');
-const contactsOptions = document.querySelector('.options');
 
 const contactsOpt = document.querySelector('.options.opened');
 
-const options = document.querySelectorAll('.option');
-const a = document.querySelectorAll('.label.active');
+
+const selected = document.querySelector('.label');
+const contactsOptions = document.querySelector('.options');
+const optionsList = document.querySelectorAll('.option');
+const contactsCard = document.querySelector('.contacts__card');
 // const contactsOption = document.querySelector('.options');
 const cards = [
 	{
@@ -29,32 +31,47 @@ const cards = [
 	}
 ]
 
-contactsSelect.addEventListener('click', () => {
-    if (contactsOptions.classList.contains('opened')) {
-        contactsOptions.classList.remove('opened');
-        contactsOptions.parentElement.querySelector('.label').classList.remove('active');
-    } else {
-        contactsOptions.classList.add('opened');
-        contactsOptions.parentElement.querySelector('.label').classList.add('active');
-    }
-   
-    // contactsSelect.classList.toggle('opened');
+const cityElement = document.querySelector('.card__row.city');
+const phoneElement = document.querySelector('.card__row.phone');
+const addressElement = document.querySelector('.card__row.address');
+
+selected.addEventListener('click', () => {
+	selected.classList.toggle('active');
+	contactsOptions.classList.toggle('opened');
+	// if (contactsOptions.classList.contains('opened')) contactsOptions.classList.remove('opened');
+	// else contactsOptions.classList.add('opened');
 });
 
-options.forEach((elem) => {
-    elem.addEventListener('click', () => {
-        contactsOptions.parentElement.querySelector('.label').textContent = elem.textContent;
-        //alert(contactsOptions.parentElement.querySelector('.label').classList);
-        //contactsOptions.parentElement.querySelector('.label').classList.remove('active');
-        //alert(contactsOptions.parentElement.querySelector('.label').classList)
-        //contactsOpt.classList.remove('opened');
-        alert(contactsOptions.parentElement.querySelector('.label').classList);
-    });
-    
-    contactsOptions.parentElement.querySelector('.label').classList.remove('active')
-    contactsOptions.classList.remove('opened')
-    //contactsOptions.parentElement.querySelector('.label').classList.remove('active');
+optionsList.forEach((elem) => {
+	elem.addEventListener('click', () => {
+		
+		//let city = el.querySelector('label').innerHTML;
+		//selected.innerHtml = city;
+		selected.textContent = elem.textContent;
+		contactsOptions.classList.remove('opened');
+		selected.classList.remove('active');
+		contactsCard.classList.add('shown');
+		cityElement.innerHTML = elem.textContent;
+		cards.forEach(i => {
+			if (i.city == elem.textContent.trim()) {
+				//alert(i.city);
+				phoneElement.innerHTML = i.phone;
+				addressElement.innerHTML = i.address;
+				
+			}
+		});
+		
+		//contactsCard.classList.add('shown');
+	// alert(elem.textContent);
+		// showCard(elem.textContent.trim());
+	});
 });
 
-
-
+// function showCard(cityName) {
+// 	const selectedObject = cards.find(item => item.city === cityName);
+// 	alert(selectedObject.city);
+// 	cityElement.innerHTML = selectedObject.city;
+// 	phoneElement.textContent = selectedObject.phone;
+// 	addressElement.textContent = selectedObject.address;
+// 	contactsCard.classList.add('shown')
+// }

@@ -764,8 +764,8 @@ img {
     padding: 27px 33px 32px;
     border-radius: 20px;
     width: 450px;
-    display: none;
-    /* visibility: hidden; */
+    /* display: none; */
+    visibility: hidden;
     align-self: flex-end;
     transition: all 0.5s ease;
     position: absolute;
@@ -773,6 +773,10 @@ img {
     left: 0;
     opacity: 0;
     order: 3;
+}
+.contacts__card.shown {
+    visibility: visible;
+    opacity: 1;
 }
 .card__row {
     display: flex;

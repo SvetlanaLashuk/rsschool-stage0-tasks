@@ -52,9 +52,8 @@
     --text-color: #636060;
     --service-item-border: #E3E1D5;
 }
-*::before, *::after, * {
+*, *::before, *::after, * {
     box-sizing: border-box;
-    /* background-size: 100%; */
 }
 html {
     scroll-behavior: smooth;
@@ -659,6 +658,8 @@ img {
     flex-direction: column;
     /* row-gap: 27px; */
     width: 450px;
+    position: relative;
+    /* z-index: 40; */
     /* height: 50px; */
 }
 .options {
@@ -675,6 +676,7 @@ img {
     overflow: hidden;
     transition: all 0.5s ease;
     order: 2;
+    z-index: 10;
 }
 .options.opened {
     display: block;
@@ -755,6 +757,70 @@ img {
 .label.active:after {
     top: 10px;
     transform: rotate(-180deg);
+}
+.contacts__card {
+    background: #EDF2EC;
+    border: 1px solid #000000;
+    padding: 27px 33px 32px;
+    border-radius: 20px;
+    width: 450px;
+    display: none;
+    /* visibility: hidden; */
+    align-self: flex-end;
+    transition: all 0.5s ease;
+    position: absolute;
+    top: 95px;
+    left: 0;
+    opacity: 0;
+    order: 3;
+}
+.card__row {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 22px;
+}
+.card__label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    min-width: 130px;
+}
+.card__value {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #717171;
+    flex-grow: 1;
+}
+.card__button {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    color: #717171;
+    border: 1px solid var(--orange);
+    border-radius: 5px;
+    width: 122px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 24px;
+    margin-left: 130px;
+    background-color: transparent;
+}
+.card__button:hover {
+    background-color: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+    transition: 1s;
 }
 /* contacts styles end */
 

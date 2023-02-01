@@ -51,7 +51,7 @@ function showCard(cityName) {
 	cardCity.textContent = selectedObject.city;
 	cardPhone.textContent = selectedObject.phone;
 	cardAddress.textContent = selectedObject.address;
-	cardButton.setAttribute('href', `tel:${selectedObject.phone}`)
+	cardButton.setAttribute('href', `tel:${selectedObject.phone}`);
 	contactsCard.classList.add('shown');
 	contactsPic.classList.add('hide');
 }

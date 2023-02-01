@@ -656,11 +656,8 @@ img {
 .container {
     display: flex;
     flex-direction: column;
-    /* row-gap: 27px; */
     width: 450px;
     position: relative;
-    /* z-index: 40; */
-    /* height: 50px; */
 }
 .options {
     font-family: 'Inter';
@@ -711,7 +708,7 @@ img {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: 0.05em;
     line-height: 40px; 
     color: #717171;
@@ -722,7 +719,11 @@ img {
     order: 1;
     transition: all 0.5s ease;
 }
-.label.active {
+.label span {
+    font-size: 20px;
+}
+.label.active,
+.label.selected {
     background-color: #C1E698;
     border: 1px solid #D6E7D2;
     border-radius: 0px;
@@ -764,7 +765,6 @@ img {
     padding: 27px 33px 32px;
     border-radius: 20px;
     width: 450px;
-    /* display: none; */
     visibility: hidden;
     align-self: flex-end;
     transition: all 0.5s ease;
@@ -962,6 +962,9 @@ img {
         margin-bottom: 249px;
         order: 2;
     }
+    .contacts__card {
+        top: 78px;
+    }
   }
 @media screen and (max-width: 768px) {
     .wrapper {
@@ -1089,6 +1092,9 @@ img {
         order: 1;
         margin-bottom: 100px;
     }
+    .contacts__card {
+        top: 80px;
+    }
     .contacts-pic {
         width: 200px;
         height: 248px;
@@ -1179,15 +1185,30 @@ img {
     .service__title {
         max-width: 190px;
     }
-    .city-select {
-        min-width: 300px;
-    }
     .accordion {
         width: 300px;
         margin-bottom: 132px;
     }
     .container {
         width: 300px;
+    }
+    .contacts__card {
+        top: 80px;
+        width: 300px;
+        padding: 33px 30px 20px;
+    }
+    .card__label {
+        min-width: 60px;
+        max-width: 60px;
+    }
+    .card__row {
+        column-gap: 16px;
+    }
+    .card__button {
+        margin: 20px auto 0;
+    }
+    .woman.hide {
+        opacity: 0;
     }
     .label:before {
         right: 20px;
@@ -1384,9 +1405,6 @@ img {
         padding: 15px 40px 15px 30px;
         font-size: 15px;
     }
-    /* .price-type-text {
-        font-size: 15px;
-    } */
     .prices__text {
         display: block;
         text-align: center;
@@ -1431,6 +1449,9 @@ img {
         width: 300px;
         padding-top: 0;
         margin-bottom: 132px;
+    }
+    .contacts__card {
+        top: 67px;
     }
     .footer {
         padding: 22px 0 7px 0;

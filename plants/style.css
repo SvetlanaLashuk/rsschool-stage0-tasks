@@ -336,19 +336,20 @@ img {
     border: 1px solid var(--orange); 
     border-radius: 5px;
     padding: 11px 40px;
+    transition: all 0.5s ease;
 }
 .service__button.active {
     background-color: var(--orange);
     color: var(--white);
     cursor: pointer;
-    transition: 0.5s;
+    transition: all 0.5s ease;
 }
 .service__button:hover,
 .service__button:active {
     background-color: var(--orange);
     color: var(--white);
     cursor: pointer;
-    transition: 0.5s;
+    transition: all 0.5s ease;
 }
 .service__button:last-child {
     margin-right: 0;
@@ -367,14 +368,19 @@ img {
     flex-basis: 330px;
     border: 1px solid #E3E1D5;
     border-radius: 20px;
+    transition: all 0.5s ease;
 }
 .service__item.blur {
     filter: blur(2px);
-    transition: 1s;
+    transition: all 0.5s ease;
 }
 .service__item:hover {
     border: 1px solid var(--green);
     cursor: pointer;
+    transition: all 0.5s ease;
+}
+.service__item.blur:hover {
+    border: 1px solid #E3E1D5;
 }
 .service__item:last-child {
     margin-right: 0;

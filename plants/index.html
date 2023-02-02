@@ -96,7 +96,7 @@
                         </div>
                     </div>
                     <div class="service__items">
-                        <div class="service__item">
+                        <div class="service__item" data-service="gardens">
                             <div class="service__item-pic">
                                 <img src="./assets/img/service-pic-1.png" alt="pic1" style="filter: contrast(0.83)" class="pic">
                             </div>
@@ -109,7 +109,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="service__item">
+                        <div class="service__item" data-service="planting">
                             <div class="service__item-pic">
                                 <img src="./assets/img/service-pic-2.png" alt="pic2" class="pic">
                             </div>
@@ -122,7 +122,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="service__item">
+                        <div class="service__item" data-service="lawn">
                             <div class="service__item-pic">
                                 <img src="./assets/img/service-pic-3.png" alt="pic3" class="pic">
                             </div>
@@ -135,7 +135,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="service__item">
+                        <div class="service__item" data-service="planting">
                             <div class="service__item-pic">
                                 <img src="./assets/img/service-pic-4.png" alt="pic4" class="pic">
                             </div>
@@ -148,7 +148,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="service__item">
+                        <div class="service__item" data-service="gardens">
                             <div class="service__item-pic">
                                 <img src="./assets/img/service-pic-5.png" alt="pic5" class="pic">
                             </div>
@@ -161,7 +161,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="service__item">
+                        <div class="service__item" data-service="planting">
                             <div class="service__item-pic">
                                 <img src="./assets/img/service-pic-6.png" alt="pic6" class="pic">
                             </div>
@@ -188,21 +188,57 @@
                                 <div class="prices__items">
                                     <div class="price__item">
                                         <div class="price-type">
-                                            <span class="price-type-text">Basics</span>
-                                            <img src="./assets/img/accordion_btn_prices.png" alt="Acrd" class="prices_accordion" width="16" height="16">
+                                            <span>Basics</span>
                                         </div>
+                                        <div class="price-descr">
+                                            <span class="line"></span>
+                                            <p class="price-text">
+                                                Release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                            </p>
+                                            <p class="price-value">
+                                                <span>$<span>15</span></span> / per hour
+                                            </p>
+                                            <p class="price-order">
+                                                <a href="#contacts" class="price-link">Order</a>
+                                            </p>
+                                        </div>
+                                        <div class="accordion-button"></div>
                                     </div>
                                     <div class="price__item">
                                         <div class="price-type">
-                                            <span class="price-type-text">Standard</span>
-                                            <img src="./assets/img/accordion_btn_prices.png" alt="Acrd" class="prices_accordion" width="16" height="16">
+                                            <span>Standard</span>
                                         </div>
+                                        <div class="price-descr">
+                                            <span class="line"></span>
+                                            <p class="price-text">
+                                                Release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                            </p>
+                                            <p class="price-value">
+                                                <span>$<span>25</span></span> / per hour
+                                            </p>
+                                            <p class="price-order">
+                                                <a href="#contacts" class="price-link">Order</a>
+                                            </p>
+                                        </div>
+                                        <div class="accordion-button"></div>
                                     </div>
                                     <div class="price__item">
                                         <div class="price-type">
-                                            <span class="price-type-text">Pro care</span>
-                                            <img src="./assets/img/accordion_btn_prices.png" alt="Acrd" class="prices_accordion" width="16" height="16">
+                                            <span>Pro care</span>
                                         </div>
+                                        <div class="price-descr">
+                                            <span class="line"></span>
+                                            <p class="price-text">
+                                                Release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                            </p>
+                                            <p class="price-value">
+                                                <span>$<span>35</span></span> / per hour
+                                            </p>
+                                            <p class="price-order">
+                                                <a href="#contacts" class="price-link">Order</a>
+                                            </p>
+                                        </div>
+                                        <div class="accordion-button"></div>
                                     </div>
                                 </div>
                             </div>
@@ -232,7 +268,40 @@
                         </h2>
                         <div class="accordion">
                             <div class="container">
-                                <div class="label">City</div>
+                                <div class="options">
+                                    <div class="option">
+                                        <input type="radio" class="radio" id="canandaigua" name="city">
+                                        <label for="canandaigua">Canandaigua, NY</label>
+                                    </div>
+                                    <div class="option">
+                                        <input type="radio" class="radio" id="ny" name="city">
+                                        <label for="ny">New York City</label>
+                                    </div>
+                                    <div class="option">
+                                        <input type="radio" class="radio" id="yonkers" name="city">
+                                        <label for="yonkers">Yonkers, NY</label>
+                                    </div>
+                                    <div class="option">
+                                        <input type="radio" class="radio" id="sherrill" name="city">
+                                        <label for="sherrill">Sherrill, NY</label>
+                                    </div>
+                                </div>
+                                <div class="label"><span>City</span></div>
+                            </div>
+                            <div class="contacts__card">
+                                <div class="card__row city">
+                                    <div class="card__label">City:</div>
+                                    <div class="card__value">Canandaigua, NY</div>
+                                </div>
+                                <div class="card__row phone">
+                                    <div class="card__label">Phone:</div>
+                                    <div class="card__value">+1	585	393 0001</div>
+                                </div>
+                                <div class="card__row address">
+                                    <div class="card__label">Office address:</div>
+                                    <div class="card__value">151 Charlotte Street</div>
+                                </div>
+                                <a href="tel:+1	585	393 0001" class="card__button">Call us</a>
                             </div>
                         </div>
                     </div>
@@ -277,5 +346,7 @@
         <script src="./index.js"></script>
         <script src="js/burger.js"></script>
         <script src="js/blur.js"></script>
+        <script src="js/pricesAccordion.js"></script>
+        <script src="js/select.js"></script>
     </body>
 </html>

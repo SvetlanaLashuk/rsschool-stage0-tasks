@@ -1,37 +1,32 @@
 const serviceButtons = document.querySelectorAll('.service__button');
-serviceButtons.forEach((serviceButton) => {
-    serviceButton.addEventListener('click', () => {
-        const serviceItemsIsBlur = document.querySelectorAll('.service__item.blur');
-        serviceItemsIsBlur.forEach((serviceItemIsBlur) => {
-            serviceItemIsBlur.classList.remove('blur');
-        });
+const serviceItems   = document.querySelectorAll('.service__item');
 
-        if (serviceButton.classList.contains('active')) {
-            serviceButton.classList.remove('active');
-        } else {
-            const serviceButtonsIsActive = document.querySelectorAll('.service__button.active');
-            serviceButtonsIsActive.forEach((serviceButtonIsActive) => {
-                serviceButtonIsActive.classList.remove('active');
+const getActiveButtons = () => Array.from(document.querySelectorAll('.service__button.active'));
+
+serviceButtons.forEach((button) => {
+    button.addEventListener('click', (e) => {
+        e.target.classList.toggle('active');
+        const activeButtons = getActiveButtons();
+        if (activeButtons.length > serviceButtons.length - 1) {
+            activeButtons.forEach((button) => {
+                button.classList.remove('active');
             });
-
-            serviceButton.classList.add('active');
-
-            const serviceItems = document.querySelectorAll('.service__item');
-            serviceItems.forEach((serviceItem) => {
-                if (serviceButton.textContent.includes('Garden')) {
-                    if (!serviceItem.textContent.includes('Garden')) {
-                        serviceItem.classList.add('blur');
-                    }
-                } else if (serviceButton.textContent.includes('Planting')) {
-                    if (!serviceItem.textContent.includes('Planting')) {
-                        serviceItem.classList.add('blur');
-                    }
-                } else if (serviceButton.textContent.includes('Lawn')) {
-                    if (!serviceItem.textContent.includes('Lawn')) {
-                        serviceItem.classList.add('blur');
-                    }
-                }
-            });
+            e.target.classList.add('active');
         }
+        onBlur();
     });
 });
+
+function onBlur() {
+    const activeButtons = getActiveButtons();
+    const activeCards = activeButtons.map((i) => i.textContent.toLowerCase().trim());
+
+    serviceItems.forEach((item) => {
+        const serviceItem = item.dataset.service;
+        if (activeCards.length === 0 || activeCards.indexOf(serviceItem) >= 0) {
+            item.classList.remove('blur');
+        } else {
+            item.classList.add('blur');
+        }
+    });
+}

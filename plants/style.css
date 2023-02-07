@@ -472,13 +472,14 @@ img {
 .price-type.active {
     background-color: #D6E7D2;
     border-radius: 20px 20px 0 0;
-    padding: 16px 40px 10px;
+    padding: 16px 40px 10px 30px;
 }
 .price-descr {
     background-color: #D6E7D2;
     padding: 0 40px;
     height: 0;
     overflow: hidden; 
+    text-align: start;
     transition: all 0.4s ease;
 }
 .price-type.active + .price-descr {
@@ -527,7 +528,8 @@ img {
     line-height: 10px;
     color: #717171;
     margin-bottom: 7px;
-    padding-top: 5px; 
+    padding-top: 5px;
+    /* text-align: start; */
 }
 .price-value {
     font-family: 'Inter';
@@ -1384,7 +1386,7 @@ img {
     }
     .prices {
         padding: 25px 0 40px 0;
-        height: 512px;
+        height: auto;
     }
     .prices__wrap {
         flex-direction: column;
@@ -1403,13 +1405,29 @@ img {
     .prices__items {
         padding: 29px 22px;
     }
+    .prices__level {
+        max-width: 225px;
+    }
     .price__item {
+        width: 180px;
         margin-bottom: 13px;
+    }
+    .accordion-button {
+        right: 42px;
+        top: 17px;
     }
     .price-type {
         column-gap: 35px;
+        width: 180px;
         padding: 15px 40px 15px 30px;
         font-size: 15px;
+    }
+    .price-descr {
+        width: 180px;
+        padding: 0 20px;
+    }
+    .line {
+        width: 140px;
     }
     .prices__text {
         display: block;

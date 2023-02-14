@@ -8,4 +8,8 @@ function getLocalStorage(key) {
     }
 }
 
-export { setLocalStorage, getLocalStorage };
+function getRundomNumber(min, max) {
+    return Math.floor(Math.random()*(max + 1 - min) + min);
+}
+
+export { setLocalStorage, getLocalStorage, getRundomNumber };

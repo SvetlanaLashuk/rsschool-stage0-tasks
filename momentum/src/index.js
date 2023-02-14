@@ -1,5 +1,3 @@
-'use strict'
+import { showTime } from './modules/dateTime.js';
 
-import { setTime } from './modules/dateTime.js';
-
-setTime('en');
+showTime('en');

@@ -15,7 +15,7 @@ async function getQuotes(lang = 'en') {
 }
 
 quoteButton.addEventListener('click', () => {
-    getQuotes('en');
+   getQuotes('en');
 });
 
 export { getQuotes };

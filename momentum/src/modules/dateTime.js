@@ -3,16 +3,16 @@ import { setLocalStorage, getLocalStorage } from './utils.js';
 const timeElement     = document.querySelector('.time');
 const dateElement     = document.querySelector('.date');
 const greetingElement = document.querySelector('.greeting');
-const inputElement    = document.querySelector('.name');
+const name            = document.querySelector('.name');
 
 window.addEventListener('beforeunload', () => {
-    setLocalStorage('name', inputElement.value);
+    setLocalStorage('name', name.value);
 });
 
 window.addEventListener('load', () => {
-    let inputValue = getLocalStorage('name');
-    if (inputValue != undefined) {
-        inputElement.value = inputValue;
+    let inputName = getLocalStorage('name');
+    if (inputName != undefined) {
+        name.value = inputName;
     }
 });
 
@@ -54,17 +54,17 @@ function getTimeOfDay() {
 
 function showGreeting(lang = 'en') {
     const timeOfDay = getTimeOfDay();
-    const greetingText = `Good ${timeOfDay}`;
+    const greetingText = `Good ${timeOfDay},`;
 
     if (lang == 'ru') {
-        if (greetingText === 'Good morning') {
-            greetingElement.textContent = 'Доброе утро';
-        } else if (greetingText === 'Good afternoon') {
-            greetingElement.textContent = 'Добрый день';
-        } else if (greetingText === 'Good evening') {
-            greetingElement.textContent = 'Добрый вечер';
+        if (greetingText === 'Good morning,') {
+            greetingElement.textContent = 'Доброе утро,';
+        } else if (greetingText === 'Good afternoon,') {
+            greetingElement.textContent = 'Добрый день,';
+        } else if (greetingText === 'Good evening,') {
+            greetingElement.textContent = 'Добрый вечер,';
         } else {
-            greetingElement.textContent = 'Доброй ночи';
+            greetingElement.textContent = 'Доброй ночи,';
         }
     } else {
         greetingElement.textContent = greetingText;

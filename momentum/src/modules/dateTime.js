@@ -5,9 +5,20 @@ const dateElement     = document.querySelector('.date');
 const greetingElement = document.querySelector('.greeting');
 const name            = document.querySelector('.name');
 
-window.addEventListener('beforeunload', () => {
-    setLocalStorage('name', name.value);
-});
+const greetingTranslation = {
+    'en': {
+        'morning': 'Good morning',
+        'afternoon': 'Good afternoon',
+        'evening': 'Good evening',
+        'night': 'Good night'
+    },
+    'ru': {
+        'morning': 'Доброе утро',
+        'afternoon': 'Добрый день',
+        'evening': 'Добрый вечер',
+        'night': 'Доброй ночи'
+    }
+};
 
 window.addEventListener('load', () => {
     let inputName = getLocalStorage('name');
@@ -16,7 +27,11 @@ window.addEventListener('load', () => {
     }
 });
 
-function showTime(lang = 'en') {
+window.addEventListener('beforeunload', () => {
+    setLocalStorage('name', name.value);
+});
+
+function showTime(lang) {
     const date = new Date();
     timeElement.textContent = date.toLocaleTimeString();
     showDate(lang);
@@ -24,10 +39,11 @@ function showTime(lang = 'en') {
     setTimeout(showTime, 1000);
 }
 
-function showDate(lang = 'en') {
+function showDate(lang) {
     const date = new Date();
     const options = {weekday: 'long', month: 'long', day: 'numeric', timeZone: 'UTC'};
-    if (lang  == 'en') {
+    
+    if (lang  === 'en') {
         dateElement.textContent = date.toLocaleDateString('en-US', options);
     } else {
         dateElement.textContent = date.toLocaleDateString('ru-RU', options);
@@ -52,23 +68,9 @@ function getTimeOfDay() {
     return time;
 }
 
-function showGreeting(lang = 'en') {
+function showGreeting(lang) {
     const timeOfDay = getTimeOfDay();
-    const greetingText = `Good ${timeOfDay},`;
-
-    if (lang == 'ru') {
-        if (greetingText === 'Good morning,') {
-            greetingElement.textContent = 'Доброе утро,';
-        } else if (greetingText === 'Good afternoon,') {
-            greetingElement.textContent = 'Добрый день,';
-        } else if (greetingText === 'Good evening,') {
-            greetingElement.textContent = 'Добрый вечер,';
-        } else {
-            greetingElement.textContent = 'Доброй ночи,';
-        }
-    } else {
-        greetingElement.textContent = greetingText;
-    }
+    greetingElement.textContent = `${greetingTranslation[lang][timeOfDay]}`;
 }
 
 export { showTime };

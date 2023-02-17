@@ -1,15 +1,15 @@
-function setLocalStorage(key, value) {
-    localStorage.setItem(key, value);
-}
-
 function getLocalStorage(key) {
     if (localStorage.getItem(key)) {
         return localStorage.getItem(key);
     }
 }
 
-function getRundomNumber(min, max) {
+function setLocalStorage(key, value) {
+    localStorage.setItem(key, value);
+}
+
+function getRandomNumber(min, max) {
     return Math.floor(Math.random()*(max - min) + min);
 }
 
-export { setLocalStorage, getLocalStorage, getRundomNumber };
+export { getLocalStorage, setLocalStorage, getRandomNumber };

@@ -249,6 +249,72 @@ body {
   height: 30vh;
   min-height: 160px;  
   padding: 20px;
+  position: relative;
+}
+
+.settings {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.settings__button {
+  background-image: url("../assets/svg/settings.svg");
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  opacity: .8;
+  cursor: pointer;
+  transition: .3s;  
+  z-index: 2;
+}
+
+.settings__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+  width: 110px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.settings__info.active {
+  visibility: visible;
+}
+
+.settings__language {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 110px;
+}
+
+.lang-title {
+  margin-bottom: 10px;
+}
+
+.language__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  cursor: pointer;
+  border: 0;
+  height: 30px;
+  width: 50px;
+}
+
+.btn.active {
+  background-color: aqua;
 }
 
 .change-quote {

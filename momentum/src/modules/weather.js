@@ -25,7 +25,7 @@ const weatherTranslation = {
 
 window.addEventListener('load', () => {
     let inputCity = getLocalStorage('city');
-    if (inputCity != undefined) {
+    if (inputCity !== undefined) {
         city.value = inputCity;
     } else {
         city.value = 'Minsk';
@@ -68,8 +68,22 @@ function setCity(event) {
 
 city.addEventListener('keypress', setCity);
 
-function translateDefaultCity(lang) {
-    city.value = (lang == 'en') ? 'Minsk' : 'Минск'; 
+ function translateDefaultCity(lang) {
+    if (city.value === 'Minsk' || city.value === 'Минск') {
+        if (lang === 'en') {
+            city.value = 'Minsk';
+        } else {
+            city.value = 'Минск';
+        }
+    }
 }
 
-export { city, getWeather, translateDefaultCity };
+function translateCityPlaceholder(lang) {
+    if (lang === 'en') {
+        city.placeholder = 'Enter city';
+    } else {
+        city.placeholder = 'Введите город';
+    }
+}
+
+export { city, getWeather, translateDefaultCity, translateCityPlaceholder };

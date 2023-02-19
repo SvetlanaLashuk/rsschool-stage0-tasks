@@ -22,7 +22,7 @@ const greetingTranslation = {
 
 window.addEventListener('load', () => {
     let inputName = getLocalStorage('name');
-    if (inputName != undefined) {
+    if (inputName !== undefined) {
         name.value = inputName;
     }
 });
@@ -32,6 +32,7 @@ window.addEventListener('beforeunload', () => {
 });
 
 function showTime(lang) {
+    lang = getLocalStorage('lang');
     const date = new Date();
     timeElement.textContent = date.toLocaleTimeString();
     showDate(lang);
@@ -69,8 +70,18 @@ function getTimeOfDay() {
 }
 
 function showGreeting(lang) {
+    //let language = getLocalStorage('lang');
     const timeOfDay = getTimeOfDay();
     greetingElement.textContent = `${greetingTranslation[lang][timeOfDay]}`;
 }
 
-export { showTime };
+function translateGreetingPlaceholder(lang) {
+    //lang = getLocalStorage('lang');
+    if (lang === 'en') {
+        name.placeholder = 'Enter name';
+    } else {
+        name.placeholder = 'Введите имя';
+    }
+}
+
+export { showTime, showDate, showGreeting, translateGreetingPlaceholder };

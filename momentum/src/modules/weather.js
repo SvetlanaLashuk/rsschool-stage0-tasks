@@ -37,7 +37,7 @@ window.addEventListener('beforeunload', () => {
 });
 
 async function getWeather(lang, city) {
-    //const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=${lang}&appid=11895977528da4edaa14e4c52f319385&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=${lang}&appid=11895977528da4edaa14e4c52f319385&units=metric`;
     const response = await fetch(url);
     const data = await response.json();
 

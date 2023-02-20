@@ -37,7 +37,7 @@ window.addEventListener('beforeunload', () => {
 });
 
 async function getWeather(lang, city) {
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=${lang}&appid=11895977528da4edaa14e4c52f319385&units=metric`;
+    //const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=${lang}&appid=11895977528da4edaa14e4c52f319385&units=metric`;
     const response = await fetch(url);
     const data = await response.json();
 
@@ -47,7 +47,7 @@ async function getWeather(lang, city) {
         temperature.textContent = `${data.main.temp.toFixed(0)}°C`;
         weatherDescription.textContent = data.weather[0].description;
         wind.textContent = `${weatherTranslation[lang].wind}: ${data.wind.speed.toFixed(0)}${weatherTranslation[lang].speed}`;
-        humidity.textContent = `${weatherTranslation[lang].humidity}: ${data.main.humidity}%`;
+        humidity.textContent = `${weatherTranslation[lang].humidity}: ${data.main.humidity.toFixed(0)}%`;
         weatherError.textContent = '';
     } else {
         weatherError.textContent = `${weatherTranslation[lang].error}`;

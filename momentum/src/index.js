@@ -21,5 +21,4 @@ window.addEventListener('load', () => {
     getWeather(language, city.value);
     showTime(language);
     getQuotes(language);
-    
 });

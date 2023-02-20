@@ -1,6 +1,6 @@
 import { setLocalStorage } from './utils.js';
 import { showDate, showGreeting, translateGreetingPlaceholder } from './dateTime.js';
-import { getQuotes } from './quote.js';
+import { getQuotes, quoteNumber } from './quote.js';
 import { city, getWeather, translateDefaultCity, translateCityPlaceholder } from './weather.js';
 
 const settingsButton    = document.querySelector('.settings__button');
@@ -10,9 +10,15 @@ const enButton          = document.querySelector('.en-button');
 const ruButton          = document.querySelector('.ru-button');
 let language;
 
-settingsButton.addEventListener('click', (e) => {
+settingsButton.addEventListener('click', () => {
     settingsInfo.classList.toggle('active');
 });
+
+// settingsInfo.addEventListener('click', (event) => {
+//     if (event.target.classList.contains('settings__info')) {
+//         settingsInfo.style.visibility = hidden;
+//     }
+// });
 
 function translateSettings(lang) {
     if (lang === 'en') {
@@ -33,7 +39,7 @@ enButton.addEventListener('click', () => {
     translateGreetingPlaceholder(language);
     translateDefaultCity(language);
     translateCityPlaceholder(language);
-    getQuotes(language);
+    getQuotes(language, quoteNumber);
     translateSettings(language);
 });
 
@@ -48,7 +54,7 @@ ruButton.addEventListener('click', () => {
     translateGreetingPlaceholder(language);
     translateDefaultCity(language);
     translateCityPlaceholder(language);
-    getQuotes(language);
+    getQuotes(language, quoteNumber);
     translateSettings(language);
 });
 

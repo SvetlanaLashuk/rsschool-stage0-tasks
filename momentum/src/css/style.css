@@ -87,13 +87,15 @@ body {
 
 .player-icon:hover,
 .slider-icon:hover,
-.change-quote:hover {
+.change-quote:hover,
+.settings__button:hover {
   opacity: 1;
 }
 
 .player-icon:active,
 .slider-icon:active,
-.change-quote:active {
+.change-quote:active,
+.settings__button:active {
   border: 0;
   outline: 0;  
   transform: scale(1.1);

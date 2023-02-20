@@ -3,7 +3,7 @@ import { setLocalStorage, getLocalStorage } from './utils.js';
 const timeElement     = document.querySelector('.time');
 const dateElement     = document.querySelector('.date');
 const greetingElement = document.querySelector('.greeting');
-const name            = document.querySelector('.name');
+const nameElement     = document.querySelector('.name');
 
 const greetingTranslation = {
     'en': {
@@ -23,12 +23,12 @@ const greetingTranslation = {
 window.addEventListener('load', () => {
     let inputName = getLocalStorage('name');
     if (inputName !== undefined) {
-        name.value = inputName;
+        nameElement.value = inputName;
     }
 });
 
 window.addEventListener('beforeunload', () => {
-    setLocalStorage('name', name.value);
+    setLocalStorage('name', nameElement.value);
 });
 
 function showTime(lang) {
@@ -70,17 +70,15 @@ function getTimeOfDay() {
 }
 
 function showGreeting(lang) {
-    //let language = getLocalStorage('lang');
     const timeOfDay = getTimeOfDay();
     greetingElement.textContent = `${greetingTranslation[lang][timeOfDay]}`;
 }
 
 function translateGreetingPlaceholder(lang) {
-    //lang = getLocalStorage('lang');
     if (lang === 'en') {
-        name.placeholder = 'Enter name';
+        nameElement.placeholder = 'Enter name';
     } else {
-        name.placeholder = 'Введите имя';
+        nameElement.placeholder = 'Введите имя';
     }
 }
 

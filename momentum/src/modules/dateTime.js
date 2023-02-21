@@ -7,16 +7,16 @@ const nameElement     = document.querySelector('.name');
 
 const greetingTranslation = {
     'en': {
-        'morning': 'Good morning',
-        'afternoon': 'Good afternoon',
-        'evening': 'Good evening',
-        'night': 'Good night'
+        'morning': 'Good morning,',
+        'afternoon': 'Good afternoon,',
+        'evening': 'Good evening,',
+        'night': 'Good night,'
     },
     'ru': {
-        'morning': 'Доброе утро',
-        'afternoon': 'Добрый день',
-        'evening': 'Добрый вечер',
-        'night': 'Доброй ночи'
+        'morning': 'Доброе утро,',
+        'afternoon': 'Добрый день,',
+        'evening': 'Добрый вечер,',
+        'night': 'Доброй ночи,'
     }
 };
 
@@ -82,4 +82,4 @@ function translateGreetingPlaceholder(lang) {
     }
 }
 
-export { showTime, showDate, showGreeting, translateGreetingPlaceholder };
+export { showTime, showDate, getTimeOfDay, showGreeting, translateGreetingPlaceholder };

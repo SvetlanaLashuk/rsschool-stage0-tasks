@@ -6,7 +6,7 @@ const authorElement = document.querySelector('.author');
 let quoteNumber;
 
 async function getQuotes(lang, item) {
-    const quotes = '../assets/data.json';
+    const quotes = 'assets/data.json';
     const response = await fetch(quotes);
     const data = await response.json();
     

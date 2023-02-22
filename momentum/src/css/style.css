@@ -281,7 +281,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 300px;
+  height: 200px;
   width: 300px;
   position: absolute;
   bottom: 0;
@@ -291,6 +291,26 @@ body {
 
 .settings__info.active {
   visibility: visible;
+  margin-bottom: 50px;
+}
+
+/* .settings__picture-source {
+  margin-bottom: 25px;
+} */
+
+.settings__radio-group {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.input-tag {
+  font-size: 15px;
+  height: 30px;
+  width: 200px;
+  border: 0;
+  outline: 0;
+  text-align: center;
 }
 
 .settings__language {

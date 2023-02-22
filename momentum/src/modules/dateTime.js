@@ -54,19 +54,19 @@ function showDate(lang) {
 function getTimeOfDay() {
     const date = new Date();
     const hours = date.getHours();
-    let time;
+    let timeOfDay;
 
     if (hours >= 6 && hours < 12) {
-        time = 'morning';
+        timeOfDay = 'morning';
     } else if (hours >= 12 && hours < 18) {
-        time = 'afternoon';
+        timeOfDay = 'afternoon';
     } else if (hours >= 18 && hours < 24) {
-        time = 'evening';
+        timeOfDay = 'evening';
     } else {
-        time = 'night';
+        timeOfDay = 'night';
     }
 
-    return time;
+    return timeOfDay;
 }
 
 function showGreeting(lang) {

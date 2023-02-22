@@ -3,11 +3,13 @@ import { showDate, showGreeting, translateGreetingPlaceholder } from './dateTime
 import { getQuotes, quoteNumber } from './quote.js';
 import { city, getWeather, translateDefaultCity, translateCityPlaceholder } from './weather.js';
 
-const settingsButton    = document.querySelector('.settings__button');
-const settingsInfo      = document.querySelector('.settings__info');
-const settingsLangTitle = document.querySelector('.settings__lang-title');
-const enButton          = document.querySelector('.en-button');
-const ruButton          = document.querySelector('.ru-button');
+const settingsButton         = document.querySelector('.settings__button');
+const settingsInfo           = document.querySelector('.settings__info');
+const settingsLangTitle      = document.querySelector('.settings__lang-title');
+const enButton               = document.querySelector('.en-button');
+const ruButton               = document.querySelector('.ru-button');
+const settingsPicSourceTitle = document.querySelector('.settings__pic-source');
+const photoTag               = document.querySelector('.input-tag ');
 let language;
 
 settingsButton.addEventListener('click', () => {
@@ -23,8 +25,12 @@ settingsButton.addEventListener('click', () => {
 function translateSettings(lang) {
     if (lang === 'en') {
         settingsLangTitle.textContent = 'Language';
+        settingsPicSourceTitle.textContent = 'Image source';
+        photoTag.placeholder = 'Search by tag';
     } else {
         settingsLangTitle.textContent = 'Язык';
+        settingsPicSourceTitle.textContent = 'Источник изображений';
+        photoTag.placeholder = 'Поиск по тэгу';
     }
 }
 

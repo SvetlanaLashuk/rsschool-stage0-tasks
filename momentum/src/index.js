@@ -3,7 +3,7 @@ import { showTime } from './modules/dateTime.js';
 import { getQuotes } from './modules/quote.js';
 import { city, getWeather } from './modules/weather.js';
 import { enButton, ruButton } from './modules/settings.js';
-import { getLinkToFlickrImage } from './modules/backgroundImage.js';
+import { setBackgroundImage } from './modules/backgroundImage.js';
 let language;
 
 window.addEventListener('load', () => {
@@ -22,5 +22,5 @@ window.addEventListener('load', () => {
     getWeather(language, city.value);
     showTime(language);
     getQuotes(language);
-    getLinkToFlickrImage();
+    setBackgroundImage('');
 });

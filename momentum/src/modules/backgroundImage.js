@@ -43,7 +43,6 @@ async function getLinkToFlickrImage(searchTag) {
             body.style.backgroundImage = `url('${photosByTag.photos.photo[imageNumber].url_h}')`;
         }
     }
-   
 }
 
 function setBackgroundImage(searchTag) {
@@ -71,8 +70,12 @@ function changeTag(event) {
 
 photoTag.addEventListener('keypress', changeTag);
 
-async function getLinkToUnsplashImage() {
-    const url = `https://api.unsplash.com/photos/random?orientation=landscape&query=nature&client_id=e2077ad31a806c894c460aec8f81bc2af4d09c4f8104ae3177bb809faf0eac17`;
+async function getLinkToUnsplashImage(searchTag) {
+    const collectionsUrl = 'https://api.unsplash.com/users/aspirituss/collections?client_id=_w4uNDZKDscnmCE98EC6LHb-RM_FgIznkv_vZKdJgKs';
+
+    const collectionPhotos = `https://api.unsplash.com/collections/${id}/photos?client_id=_w4uNDZKDscnmCE98EC6LHb-RM_FgIznkv_vZKdJgKs&per_page=20`;
+
+    const url = `https://api.unsplash.com/photos/random?orientation=landscape&query=${searchTag}&client_id=_w4uNDZKDscnmCE98EC6LHb-RM_FgIznkv_vZKdJgKs`;
     const response = await fetch(url);
     const data = await response.json();
 }

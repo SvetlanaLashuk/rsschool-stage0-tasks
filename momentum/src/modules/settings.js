@@ -1,6 +1,6 @@
-import { setLocalStorage } from './utils.js';
-import { showDate, showGreeting, translateGreetingPlaceholder } from './dateTime.js';
-import { getQuotes, quoteNumber } from './quote.js';
+import { setLocalStorage }                                                  from './utils.js';
+import { showDate, showGreeting, translateGreetingPlaceholder }             from './dateTime.js';
+import { getQuotes, quoteNumber }                                           from './quote.js';
 import { city, getWeather, translateDefaultCity, translateCityPlaceholder } from './weather.js';
 
 const settingsButton         = document.querySelector('.settings__button');
@@ -15,12 +15,6 @@ let language;
 settingsButton.addEventListener('click', () => {
     settingsInfo.classList.toggle('active');
 });
-
-// settingsInfo.addEventListener('click', (event) => {
-//     if (event.target.classList.contains('settings__info')) {
-//         settingsInfo.style.visibility = hidden;
-//     }
-// });
 
 function translateSettings(lang) {
     if (lang === 'en') {

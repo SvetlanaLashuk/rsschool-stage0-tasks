@@ -1,9 +1,9 @@
 import { setLocalStorage, getLocalStorage } from './modules/utils.js';
-import { showTime } from './modules/dateTime.js';
-import { getQuotes } from './modules/quote.js';
-import { city, getWeather } from './modules/weather.js';
-import { enButton, ruButton } from './modules/settings.js';
-import { setBackgroundImage } from './modules/backgroundImage.js';
+import { showTime }                         from './modules/dateTime.js';
+import { getQuotes }                        from './modules/quote.js';
+import { city, getWeather }                 from './modules/weather.js';
+import { enButton, ruButton }               from './modules/settings.js';
+import { setBackgroundImage }               from './modules/backgroundImage.js';
 let language;
 
 window.addEventListener('load', () => {

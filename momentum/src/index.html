@@ -11,6 +11,7 @@
 <body>
   <header class="header">
     <div class="player">
+      <!-- <audio src=""></audio> -->
       <div class="player-controls">
         <button class="play-prev player-icon"></button>
         <button class="play player-icon"></button>
@@ -62,7 +63,38 @@
               <span class="radio-button">Flickr</span>
             </label>
           </div>
-          <input class="input-tag" type="text" placeholder="Поиск по тэгу">
+          <input class="input-tag" type="text" placeholder="Search by tag">
+        </div>
+        <div class="settings__checkboxes">
+          <p class="settings__checkboxes-title title">Hide/show blocks</p>
+          <div class="checkbox-columns">
+            <div class="checkbox-column-one">
+              <label for="time">
+                <input type="checkbox" id="time" name="time">
+                <span class="checkbox-time-title">Time</span>
+              </label>
+              <label for="date">
+                <input type="checkbox" id="date" name="date">
+                <span class="checkbox-date-title">Date</span>
+              </label>
+            </div>
+            <div class="checkbox-column-two">
+              <label for="greeting">
+                <input type="checkbox" id="greeting" name="greeting">
+                <span class="checkbox-greeting-title">Greeting</span>
+              </label>
+              <label for="quote">
+                <input type="checkbox" id="quote" name="quote">
+                <span class="checkbox-quote-title">Quote</span>
+              </label>
+            </div>
+            <div class="checkbox-column-three">
+              <label for="weather">
+                <input type="checkbox" id="weather" name="weather">
+                <span class="checkbox-weather-title">Weather</span>
+              </label>
+            </div>
+          </div>
         </div>
         <div class="settings__language">
           <p class="settings__lang-title title">Language</p>

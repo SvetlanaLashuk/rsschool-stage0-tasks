@@ -21,14 +21,15 @@ githubRadioButton.addEventListener('change', (event) => {
     imageSource = event.target.value;
     // photoTag.style.opacity = 0;
     photoTag.style.visibility = "hidden";
-    setGithubImage();
+    setBackgroundImage(pageTag);
 });
 
 flickrRadioButton.addEventListener('change', (event) => {
     imageSource = event.target.value;
     // photoTag.style.opacity = 1;
     photoTag.style.visibility = "visible";
-    setFlickrImage(pageTag);
+    //photoTag.style.transition = 
+    setBackgroundImage(pageTag);
 
 });
 
@@ -36,7 +37,7 @@ unsplashRadioButton.addEventListener('change', (event) => {
     imageSource = event.target.value;
     // photoTag.style.opacity = 1;
     photoTag.style.visibility = "visible";
-    setUnsplashImage(pageTag);
+    setBackgroundImage(pageTag);
 });
 
 function getSlidePrev() {

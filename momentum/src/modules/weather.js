@@ -66,7 +66,7 @@ function setCity(event) {
     }
 }
 
-city.addEventListener('keypdown', setCity);
+city.addEventListener('keypress', setCity);
 
  function translateDefaultCity(lang) {
     if (city.value === 'Minsk' || city.value === 'Минск') {

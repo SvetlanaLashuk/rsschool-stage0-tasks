@@ -1,0 +1,522 @@
+[
+    {
+        "en": {
+            "text": "All you need is love",
+            "author": "John Lennon"
+        },
+        "ru": {
+            "text": "Всё, что тебе нужно, — это любовь",
+            "author": "Джон Леннон"
+        }
+    },
+    {
+        "en": {
+            "text": "When inspiration does not come to me, I go halfway to meet it",
+            "author": "Sigmund Freud"
+        },
+        "ru": {
+            "text": "Когда вдохновение не приходит ко мне, я выхожу ему навстречу",
+            "author": "Зигмунд Фрейд"
+        }
+    },
+    {
+        "en": {
+            "text": "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe",
+            "author": "Albert Einstein"
+        },
+        "ru": {
+            "text": "Две вещи бесконечны: вселенная и человеческая глупость; и я еще не уверен насчет вселенной",
+            "author": "Альберт Энштейн"
+        }
+    },
+    {
+        "en": {
+            "text": "Illusion is the first of all pleasures",
+            "author": "Oscar Wilde"
+        },
+        "ru": {
+            "text": "Иллюзия - высшее наслаждение",
+            "author": "Оскар Уайльд"
+        }
+    },
+    {
+        "en": {
+            "text": "Success doesn't come to you…you go to it",
+            "author": "Marva Collins"
+        },
+        "ru": {
+            "text": "Успех сам не приходит к Вам... Вы идете к нему",
+            "author": "Марва Коллинз"
+        }
+    },
+    {
+        "en": {
+            "text": "Music is the soul of language",
+            "author": "Max Handel"
+        },
+        "ru": {
+            "text": "Музыка - это душа языка",
+            "author": "Макс Гендель"
+        }
+    },
+    {
+        "en": {
+            "text": "I don't care what you think about me. I don't think about you at all",
+            "author": "Coco Chanel"
+        },
+        "ru": {
+            "text": "Я не забочусь о том, что вы обо мне думаете, я о вас не думаю вообще",
+            "author": "Коко Шанель"
+        }
+    },
+    {
+        "en": {
+            "text": "The weak can never forgive. Forgiveness is the attribute of the strong",
+            "author": "Mahatma Gandhi"
+        },
+        "ru": {
+            "text": "Слабые никогда не прощают. Умение прощать — свойство сильных",
+            "author": "Махатма Ганди"
+        }
+    },
+    {
+        "en": {
+            "text": "Success is the ability to go from failure to failure without losing your enthusiasm",
+            "author": "Winston Churchill"
+        },
+        "ru": {
+            "text": "Успех — это умение двигаться от неудачи к неудаче, не теряя энтузиазма",
+            "author": "Уинстон Черчилль"
+        }
+    },
+    {
+        "en": {
+            "text": "Simplicity is the ultimate sophistication",
+            "author": "Leonardo da Vinci"
+        },
+        "ru": {
+            "text": "Простота есть высшая степень утонченности",
+            "author": "Леонардо да Винчи"
+        }
+    },
+    {
+        "en": {
+            "text": "Our life is what our thoughts make it",
+            "author": "Marcus Aurelius"
+        },
+        "ru": {
+            "text": "Наша жизнь есть то, что мы думаем о ней",
+            "author": "Марк Аврелий"
+        }
+    },
+    {
+        "en": {
+            "text": "Life is a series of choices",
+            "author": "Nostradamus"
+        },
+        "ru": {
+            "text": "Жизнь — это череда выборов",
+            "author": "Нострадамус"
+        }
+    },
+    {
+        "en": {
+            "text": "In the middle of difficulty lies opportunity",
+            "author": "Albert Einstein"
+        },
+        "ru": {
+            "text": "В центре трудности лежит возможность",
+            "author": "Альберт Эйнштейн"
+        }
+    },
+    {
+        "en": {
+            "text": "Beauty is in the eye of the beholder",
+            "author": "Oscar Wilde"
+        },
+        "ru": {
+            "text": "Красота в глазах смотрящего",
+            "author": "Оскар Уайльд"
+        }
+    },
+    {
+        "en": {
+            "text": "Be happy for this moment. This moment is your life",
+            "author": "Omar Khayyam"
+        },
+        "ru": {
+            "text": "Будьте счастливы в этот момент. Этот момент — твоя жизнь",
+            "author": "Омар Хайям"
+        }
+    },
+    {
+        "en": {
+            "text": "You can never plan the future by the past",
+            "author": "Edmund Burke"
+        },
+        "ru": {
+            "text": "Вы никогда не сможете спланировать будущее прошлым",
+            "author": "Эдмунд Берк"
+        }
+    },
+    {
+        "en": {
+            "text": "You only live once, but if you do it right, once is enough",
+            "author": "Mae West"
+        },
+        "ru": {
+            "text": "Вы живете только один раз, но если вы все делаете правильно, достаточно одного раза",
+            "author": "Мэй Уэст"
+        }
+    },
+    {
+        "en": {
+            "text": "Understanding is the first step to acceptance",
+            "author": "J.K.Rowling"
+        },
+        "ru": {
+            "text": "Понимание — это первый шаг к принятию",
+            "author": "Дж.К.Роулинг"
+        }
+    },
+    {
+        "en": {
+            "text": "Life is really simple, but we insist on making it complicated",
+            "author": "Confucius"
+        },
+        "ru": {
+            "text": "Жизнь действительно проста, но мы настаиваем на ее усложнении",
+            "author": "Конфуций"
+        }
+    },
+    {
+        "en": {
+            "text": "Always laugh when you can. It is cheap medicine",
+            "author": "George Byron"
+        },
+        "ru": {
+            "text": "Смейтесь всегда, когда можете. Это самое дешевое лекарство",
+            "author": "Джордж Байрон"
+        }
+    },
+    {
+        "en": {
+            "text": "Never regret anything that made you smile",
+            "author": "Mark Twain"
+        },
+        "ru": {
+            "text": "Никогда не сожалей о том, что заставляет тебя улыбаться",
+            "author": "Марк Твен"
+        }
+    },
+    {
+        "en": {
+            "text": "Knowledge is power",
+            "author": "Sir Francis Bacon"
+        },
+        "ru": {
+            "text": "Знание — сила",
+            "author": "Фрэнсис Бэкон"
+        }
+    },
+    {
+        "en": {
+            "text": "Love the life you live, and live the life you love",
+            "author": "Bob Marley"
+        },
+        "ru": {
+            "text": "Люби жизнь, которой живешь и живи жизнью, которую любишь",
+            "author": "Боб Марли"
+        }
+    },
+    {
+        "en": {
+            "text": "While we are postponing, life speeds by",
+            "author": "Seneca"
+        },
+        "ru": {
+            "text": "Пока мы откладываем все дела на потом, жизнь проходит мимо",
+            "author": "Сенека"
+        }
+    },
+    {
+        "en": {
+            "text": "The roots of education are bitter, but the fruit is sweet",
+            "author": "Aristotle"
+        },
+        "ru": {
+            "text": "Корни образования горькие, зато фрукты сладкие",
+            "author": "Аристотель"
+        }
+    },
+    {
+        "en": {
+            "text": "One word frees us of all the weight and pain of life: that word is love",
+            "author": "Sophocles"
+        },
+        "ru": {
+            "text": "Одно слово освобождает нас от всех тяжестей и болей жизни: это слово — любовь",
+            "author": "Софокл"
+        }
+    },
+    {
+        "en": {
+            "text": "Choose a job you love, and you will never have to work a day in your life",
+            "author": "Confucius"
+        },
+        "ru": {
+            "text": "Выбирайте работу по душе, и вам не придется работать ни дня в своей жизни",
+            "author": "Конфуций"
+        }
+    },
+    {
+        "en": {
+            "text": "Always forgive your enemies; nothing annoys them so much",
+            "author": "Oscar Wilde"
+        },
+        "ru": {
+            "text": "Всегда прощайте ваших врагов, ничто не раздражает их больше",
+            "author": "Оскар Уайлд"
+        }
+    },
+    {
+        "en": {
+            "text": "No act of kindness, no matter how small, is ever wasted",
+            "author": "Aesop"
+        },
+        "ru": {
+            "text": "Доброта, даже самая маленькая, никогда не пропадает даром",
+            "author": "Эзоп"
+        }
+    },
+    {
+        "en": {
+            "text": "A dream becomes a goal when action is taken toward its achievement",
+            "author": "Bo Bennett"
+        },
+        "ru": {
+            "text": "Мечта становится целью, когда предпринято действие для ее достижения",
+            "author": "Бо Беннет"
+        }
+    },
+    {
+        "en": {
+            "text": "Eighty percent of success is showing up",
+            "author": "Woody Allen"
+        },
+        "ru": {
+            "text": "Восемьдесят процентов успеха в том, чтобы появиться в нужное время в нужном месте",
+            "author": "Вуди Аллен"
+        }
+    },
+    {
+        "en": {
+            "text": "Build your own dreams, or someone else will hire you to build theirs",
+            "author": "Farrah Gray"
+        },
+        "ru": {
+            "text": "Воплощайте собственные мечты, или кто-то другой наймет вас, чтобы воплощать свои",
+            "author": "Фаррах Грей"
+        }
+    },
+    {
+        "en": {
+            "text": "Success is a lousy teacher. It seduces smart people into thinking they can't lose",
+            "author": "Bill Gates"
+        },
+        "ru": {
+            "text": "Успех — скверный учитель. Он кружит голову умным людям и заставляет их думать, что они не смогут проиграть",
+            "author": "Билл Гейтс"
+        }
+    },
+    {
+        "en": {
+            "text": "Everything you can imagine is real",
+            "author": "Pablo Picasso"
+        },
+        "ru": {
+            "text": "Все, что вы можете представить, реально",
+            "author": "Пабло Пикассо"
+        }
+    },
+    {
+        "en": {
+            "text": "Music is the universal language of mankind",
+            "author": "Henry Wadsworth Longfellow"
+        },
+        "ru": {
+            "text": "Музыка — это универсальный язык человечества",
+            "author": "Генри Уодсворт Лонгфелл"
+        }
+    },
+    {
+        "en": {
+            "text": "A man cannot be comfortable without his own approval",
+            "author": "Mark Twain"
+        },
+        "ru": {
+            "text": "Человек не может быть доволен жизнью, если он не доволен собой",
+            "author": "Марк Твен"
+        }
+    },
+    {
+        "en": {
+            "text": "The fates have given mankind a patient soul",
+            "author": "Homer"
+        },
+        "ru": {
+            "text": "Судьба наделила человека терпеливой душой",
+            "author": "Гомер"
+        }
+    },
+    {
+        "en": {
+            "text": "Happy will they be who lend ear to the words of the Dead",
+            "author": "Leonardo da Vinci"
+        },
+        "ru": {
+            "text": "Счастлив будет тот, кто прислушается к словам умерших",
+            "author": "Леонардо Да Винчи"
+        }
+    },
+    {
+        "en": {
+            "text": "Success is one percent inspiration, ninety-nine percent perspiration",
+            "author": "Thomas Edison"
+        },
+        "ru": {
+            "text": "Успех — это один процент вдохновения и девяносто девять процентов пота",
+            "author": "Томас Эдисон"
+        }
+    },
+    {
+        "en": {
+            "text": "Love all, trust a few, do wrong to none",
+            "author": "William Shakespeare"
+        },
+        "ru": {
+            "text": "Люби всех, доверяй избранным и никому не делай зла",
+            "author": "Уильям Шекспир"
+        }
+    },
+    {
+        "en": {
+            "text": "Remember no one can make you feel inferior without your consent",
+            "author": "Eleanor Roosevelt"
+        },
+        "ru": {
+            "text": "Помните: никто не может заставить вас почувствовать себя униженным без вашего согласия",
+            "author": "Элеонора Рузвельт"
+        }
+    },
+    {
+        "en": {
+            "text": "Self-conquest is the greatest of victories",
+            "author": "Plato"
+        },
+        "ru": {
+            "text": "Победа над собой — величайшая из побед",
+            "author": "Платон"
+        }
+    },
+    {
+        "en": {
+            "text": "Life is what happens when you're busy making other plans",
+            "author": "John Lennon"
+        },
+        "ru": {
+            "text": "Жизнь — это то, что происходит, когда вы заняты построением планов",
+            "author": "Джон Леннон"
+        }
+    },
+    {
+        "en": {
+            "text": "If you want to be happy, be",
+            "author": "Leo Tolstoy"
+        },
+        "ru": {
+            "text": "Если вы хотите быть счастливым, будьте им",
+            "author": "Лев Толстой"
+        }
+    },
+    {
+        "en": {
+            "text": "The purpose of our lives is to be happy",
+            "author": "Dalai Lama"
+        },
+        "ru": {
+            "text": "Цель нашей жизни — быть счастливыми",
+            "author": "Далай Лама"
+        }
+    },
+    {
+        "en": {
+            "text": "Life itself is the most wonderful fairy tale",
+            "author": "Hans Christian Andersen"
+        },
+        "ru": {
+            "text": "Сама жизнь — это самая прекрасная сказка",
+            "author": "Ганс Христиан Андерсен"
+        }
+    },
+    {
+        "en": {
+            "text": "Life isn't about finding yourself. Life is about creating yourself",
+            "author": "George Bernard Shaw"
+        },
+        "ru": {
+            "text": "Жизнь — это не поиск себя. Жизнь — это создание себя",
+            "author": "Джордж Бернард Шоу"
+        }
+    },
+    {
+        "en": {
+            "text": "Every child is an artist, the problem is staying an artist when you grow up",
+            "author": "Pablo Picasso"
+        },
+        "ru": {
+            "text": "Каждый ребенок — художник, проблема в том, чтобы остаться художником, когда вырастешь",
+            "author": "Пабло Пикассо"
+        }
+    },
+    {
+        "en": {
+            "text": "Be yourself; everyone else is already taken",
+            "author": "Oscar Wilde"
+        },
+        "ru": {
+            "text": "Будьте собой; все остальные уже заняты",
+            "author": "Оскар Уайлд"
+        }
+    },
+    {
+        "en": {
+            "text": "The journey of a thousand miles begins with one step",
+            "author": "Lao Tzu"
+        },
+        "ru": {
+            "text": "Путешествие в тысячу миль начинается с одного шага",
+            "author": "Лао-цзы"
+        }
+    },
+    {
+        "en": {
+            "text": "People are just as happy as they make up their minds to be",
+            "author": "Abraham Lincoln"
+        },
+        "ru": {
+            "text": "Люди счастливы лишь настолько, насколько они сами этого хотят",
+            "author": "Авраам Линкольн"
+        }
+    },
+    {
+        "en": {
+            "text": "True love stories never have endings",
+            "author": "Ричард Бах"
+        },
+        "ru": {
+            "text": "Настоящие истории любви не заканчиваются",
+            "author": "Richard Bach"
+        }
+    }
+]

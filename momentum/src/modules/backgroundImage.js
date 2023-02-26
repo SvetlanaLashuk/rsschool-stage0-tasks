@@ -1,41 +1,36 @@
-import { getTimeOfDay }    from './dateTime.js';
+import { getTimeOfDay } from './dateTime.js';
 import { getRandomNumber } from './utils.js';
 
-const body                = document.querySelector('body');
-const photoTag            = document.querySelector('.input-tag ');
-const flickrRadioButton   = document.querySelector('#flickr');
+const body = document.querySelector('body');
+const photoTag = document.querySelector('.input-tag ');
+const flickrRadioButton = document.querySelector('#flickr');
 const unsplashRadioButton = document.querySelector('#unsplash');
-const githubRadioButton   = document.querySelector('#github');
-const slidePrev           = document.querySelector('.slide-prev');
-const slideNext           = document.querySelector('.slide-next');
+const githubRadioButton = document.querySelector('#github');
+const slidePrev = document.querySelector('.slide-prev');
+const slideNext = document.querySelector('.slide-next');
 
 let imageSource = githubRadioButton.value;
 let pageTag = '';
 let randomNumber;
 
 window.addEventListener('load', () => {
-    randomNumber = getRandomNumber(1,20);
+    randomNumber = getRandomNumber(1, 20);
 });
 
 githubRadioButton.addEventListener('change', (event) => {
     imageSource = event.target.value;
-    // photoTag.style.opacity = 0;
     photoTag.style.visibility = "hidden";
     setBackgroundImage(pageTag);
 });
 
 flickrRadioButton.addEventListener('change', (event) => {
     imageSource = event.target.value;
-    // photoTag.style.opacity = 1;
     photoTag.style.visibility = "visible";
-    //photoTag.style.transition = 
     setBackgroundImage(pageTag);
-
 });
 
 unsplashRadioButton.addEventListener('change', (event) => {
     imageSource = event.target.value;
-    // photoTag.style.opacity = 1;
     photoTag.style.visibility = "visible";
     setBackgroundImage(pageTag);
 });
@@ -84,7 +79,7 @@ async function setFlickrImage(searchTag) {
         const galleryPhotos = await responseGalleryPhotos.json();
 
         const img = new Image();
-        const imageNumber = getRandomNumber(0,19);
+        const imageNumber = getRandomNumber(0, 19);
         img.src = galleryPhotos.photos.photo[imageNumber].url_h;
         img.onload = () => {
             body.style.backgroundImage = `url('${img.src}')`;
@@ -95,7 +90,7 @@ async function setFlickrImage(searchTag) {
         const photosByTag = await responsePhotosByTag.json();
 
         const img = new Image();
-        const imageNumber = getRandomNumber(0,19);
+        const imageNumber = getRandomNumber(0, 19);
         img.src = photosByTag.photos.photo[imageNumber].url_h;
         img.onload = () => {
             body.style.backgroundImage = `url('${img.src}')`;
@@ -115,7 +110,7 @@ async function setUnsplashImage(searchTag) {
         const collectionPhotos = await responseCollectionPhotos.json();
 
         const img = new Image();
-        const imageNumber = getRandomNumber(0,19);
+        const imageNumber = getRandomNumber(0, 19);
         img.src = collectionPhotos[imageNumber].urls.regular;
         img.onload = () => {
             body.style.backgroundImage = `url('${img.src}')`;
@@ -153,4 +148,4 @@ function changeTag(event) {
 
 photoTag.addEventListener('keypress', changeTag);
 
-export { setBackgroundImage };
+export { setBackgroundImage, photoTag, githubRadioButton };

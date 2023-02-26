@@ -3,6 +3,7 @@ import { setLocalStorage, getLocalStorage } from './utils.js';
 const timeElement     = document.querySelector('.time');
 const dateElement     = document.querySelector('.date');
 const greetingElement = document.querySelector('.greeting');
+const greetingContainer = document.querySelector('.greeting-container');
 const nameElement     = document.querySelector('.name');
 
 const greetingTranslation = {
@@ -82,4 +83,13 @@ function translateGreetingPlaceholder(lang) {
     }
 }
 
-export { showTime, showDate, getTimeOfDay, showGreeting, translateGreetingPlaceholder };
+export { 
+    timeElement, 
+    dateElement,
+    greetingElement,
+    showTime, 
+    showDate, 
+    getTimeOfDay, 
+    showGreeting, 
+    translateGreetingPlaceholder 
+};

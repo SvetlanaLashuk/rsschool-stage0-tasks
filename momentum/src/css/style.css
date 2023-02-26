@@ -16,7 +16,6 @@ body {
   font-size: 16px;
   color: #fff;
   text-align: center;
-  /* background: url("../assets/img/bg.jpg") center/cover, rgba(0, 0, 0, 0.5); */
   background: rgba(0, 0, 0, 0.5) center/cover no-repeat;
   background-blend-mode: multiply;
   transition: background-image 1s ease-in-out;
@@ -297,10 +296,6 @@ body {
   margin-bottom: 40px;
 }
 
-/* .settings__picture-source {
-  margin-bottom: 25px;
-} */
-
 .settings__radio-group {
   display: flex;
   justify-content: space-around;
@@ -351,7 +346,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* width: 110px; */
 }
 
 .title {
@@ -385,6 +379,24 @@ body {
 
 .author {
   min-height: 20px;
+}
+
+.user-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 15px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.github {
+  filter: invert(100%);
+}
+
+.rsschool-icon {
+  filter: invert(100%);
 }
 
 @media (max-width: 768px) {
